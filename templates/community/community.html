@@ -1,0 +1,33 @@
+<ion-view view-title="新闻">
+    <div class="bar bar-subheader" style="top: 0px">
+        <ion-scroll direction="x" scrollbar-x="false">
+            <div class="button-bar sub-header-list">
+                <a class="button button-clear clicked" ng-click="changeTab(15,0)">新闻</a>
+                <a class="button button-clear" ng-click="changeTab(1,1)">资讯</a>
+                <a class="button button-clear" ng-click="changeTab(27,2)">财经</a>
+                <a class="button button-clear" ng-click="changeTab(15,3)">体育</a>
+                <a class="button button-clear">科技</a>
+                <a class="button button-clear">军事</a>
+                <a class="button button-clear">女性</a>
+                <a class="button button-clear">健康</a>
+            </div>
+        </ion-scroll>
+    </div>
+    <ion-content class="has-subheader" delegate-handle="head">
+        <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh()"></ion-refresher>
+        <div style="margin-top:60px; text-align: center" ng-if="showLoading">
+            <ion-spinner icon="ios" style="height: 60px; width: 60px;;"></ion-spinner>
+        </div>
+        <ion-list ng-if="showLoading==false">
+            <ion-item collection-repeat="item in items" class="item-avatar-left" href="#/tab/newsContent/{{item.aid}}">
+                <img ng-src="{{G.imgUrl}}{{item.pic}}"/>
+                <h2>{{item.title}}</h2>
+                <p>{{G.imgUrl}}{{item.pic}}</p>
+            </ion-item>
+        </ion-list>
+
+        <ion-infinite-scroll on-infinite="loadMore()" distance="1%" immediate-check="false" ng-if="hasMore()">
+
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>

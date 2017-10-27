@@ -1,0 +1,114 @@
+<ion-view view-title="新西兰" hide-tabs>
+    <div class="bar bar-header">
+        <a href="#tab/home" class="button button-icon icon ion-ios-arrow-left"style="color: #15a6fd"></a>
+        <h1 class="title">新西兰</h1>
+        <a href="#" class="button button-icon icon ion-ios-search-strong"style="color: #15a6fd"></a>
+    </div>
+
+    <ion-content class="has-header"  delegate-handle="head">
+        <div class="homeDd-1">
+            <div class="homeDd-1-a">
+                <img class="homeDd-1-a-img1" src="img/homec-0.jpg">
+                <div class="homeDd-1-adiv">
+                    <p class="homeDd-1-adiv-p"><新西兰个人旅游签证三个月></p>
+                    <span class="homeDd-1-adiv-span">北京领区</span>
+                    <p class="homeDd-1-adiv-p1"><span>￥1688</span>起</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="homeDb5"></div>
+        <div class="homeD-e">
+            <div class="button-bar sub-header-list">
+                <a class="button button-clear button-small clicked" ng-click="changTab(0)">基本信息</a>
+                <a class="button button-clear button-small" ng-click="changTab(1)">所需材料</a>
+                <a class="button button-clear button-small" ng-click="changTab(2)">特别提示</a>
+            </div>
+        </div>
+        <div ng-show="menus.show_0">
+            <p class="jiaben">
+                <i class="ion-record"></i>
+                <span class="jibenspan">签证类型 ：</span>
+                <span class="jibenspan1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 个人旅行签证</span>
+            </p>
+            <p class="jiaben">
+                <i class="ion-record"></i>
+                <span class="jibenspan">有效期 ：</span>
+                <span class="jibenspan1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;120天</span>
+            </p>
+            <p class="jiaben">
+                <i class="ion-record"></i>
+                <span class="jibenspan">最多停留天数 ：</span>
+                <span class="jibenspan1">&nbsp;&nbsp;&nbsp;180天</span>
+            </p>
+            <p class="jiaben">
+                <i class="ion-record"></i>
+                <span class="jibenspan">使馆预计工作日 ：</span>
+                <span class="jibenspan1">5~8天</span>
+            </p>
+            <p class="jiaben">
+                <i class="ion-record"></i>
+                <span class="jibenspan">收客范围 ：<span>北京; 西藏全省; 河南全省; 湖南全省;
+湖北全省; 河北全省; 内蒙古全省; 山西全省; 天津; 甘
+肃全省; 宁夏全省; 青海全省; 陕西全省; 新疆全省</span></span>
+
+            </p>
+
+        </div>
+        <div class="list" ng-show="menus.show_1">
+            <a class="item item-icon-left" href="#" id="aaaaitem">
+                在职
+                    <span class="item-note" id="itemid">
+                       共需要5项资料&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="icon-right ion-chevron-right button-calm"></i>
+                    </span>
+
+            </a>
+            <a class="item item-icon-left" href="#"id="aaaaitem">
+                自由职业
+                    <span class="item-note" id="itemid">
+                       共需要6项资料&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="icon-right ion-chevron-right button-calm"></i>
+                    </span>
+            </a>
+            <a class="item item-icon-left" href="#"id="aaaaitem">
+                在校学生
+                   <span class="item-note" id="itemid">
+                       共需要4项资料&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="icon-right ion-chevron-right button-calm"></i>
+                    </span>
+            </a>
+            <a class="item item-icon-left" href="#"id="aaaaitem">
+                退休
+                   <span class="item-note" id="itemid">
+                       共需要5项资料&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="icon-right ion-chevron-right button-calm"></i>
+                    </span>
+            </a>
+            <a class="item item-icon-left" href="#"id="aaaaitem">
+                学龄前儿童
+                   <span class="item-note" id="itemid">
+                       共需要6项资料&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="icon-right ion-chevron-right button-calm"></i>
+                    </span>
+            </a>
+        </div>
+        <div ng-show="menus.show_2"></div>
+    </ion-content>
+
+    <div class="bar bar-footer bar-dark" style="padding: 0">
+        <div id="homeAcdi" href="#" ng-click="showModal()">
+            <i class="ion-ios-telephone"></i></br>
+            <span>电话咨询</span>
+        </div>
+
+        <div id="homeAcdi1">
+            <a href="#tab/order">
+                立即预订
+            </a>
+        </div>
+
+    </div>
+</ion-view>
+
+

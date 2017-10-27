@@ -1,0 +1,132 @@
+<ion-view view-title="优惠信息">
+    <div class="bar bar-header">
+        <ion-nav-bar>
+            <ion-nav-back-button class="button-icon ion-ios-arrow-left dingdan">
+                返回
+            </ion-nav-back-button>
+        </ion-nav-bar>
+    </div>
+
+    <ion-content class="youhui" delegate-handle="head">
+
+        <div class="kong"></div>
+        <div class="cuoxiao"><i class="ion-ios-paperplane-outline"></i><span>促销活动</span></div>
+        <div class="cuoxiaoxuanze">
+            <div>
+                <input name="Fruit" type="radio"id="Fruit1"checked/><label for="Fruit1">
+                <p id="cuoxiaoxuanzedivp">处境跟团游新年优惠券</p>
+                <p id="queren">(需致电010-85118522确认后享受优惠)</p>
+                <div class="cuoxiaoxuanzedivimg">
+                    <p>
+                        <span class="youhuizi">优惠券</span>
+                        <span class="cuoxiaoxuanze-div-span">移动端下单更优惠</span>
+                    </p>
+                    <p>
+                        <span class="youhuizi">优惠券</span>
+                        <span class="cuoxiaoxuanze-div-span">出境跟团立减1~2000元</span>
+                    </p>
+
+                </div>
+            </label>
+            </div>
+
+            <div>
+                <input name="Fruit"id="Fruit2"type="radio"/><label for="Fruit2">
+                <span>处境跟团游新年优惠券</span></label>
+            </div>
+
+            <div>
+                <input name="Fruit" type="radio"id="Fruit3"/><label for="Fruit3">
+                <span>处境跟团游新年优惠券</span></label>
+            </div>
+
+            <div>
+                <input name="Fruit" type="radio"id="Fruit4"/><label for="Fruit4">
+                <span>处境跟团游新年优惠券</span></label>
+            </div>
+
+        </div>
+        <div class="kong"></div>
+        <div class="cuoxiao"><i class="ion-ios-paper-outline"></i><span>电子优惠券</span></div>
+        <div class="cuoxiaoxuanze">
+            <p>
+                <input name="Fruit1" type="radio" id="Fruit11"checked/>
+            <label for="Fruit11">
+                <span class="cuoxiaoxuanze1">编号 ：<span>13789289818</span></span>
+                <span class="cuoxiaoxuanze2">面值 ：<span>50</span></span><br/>
+                <span class="cuoxiaoxuanze3">名称 ：<span>年终会员大礼包优惠券</span></span>
+            </label>
+            </p>
+            <p>
+                <input name="Fruit1" type="radio"id="Fruit12" checked/>
+            <label for="Fruit12">
+                <span class="cuoxiaoxuanze1">编号 ：<span>13789289818</span></span>
+                <span class="cuoxiaoxuanze2">面值 ：<span>50</span></span><br/>
+                <span class="cuoxiaoxuanze3">名称 ：<span>年终会员大礼包优惠券</span></span>
+            </label>
+            </p>
+            <p>
+                <i class="ion-ios-close-outline"></i>
+                <span class="cuoxiaoxuanze1">编号 ：<span>13789289818</span></span>
+                <span class="cuoxiaoxuanze2">面值 ：<span>50</span></span><br/>
+                <span class="cuoxiaoxuanze3">名称 ：<span>年终会员大礼包优惠券</span></span>
+            </p>
+            <div class="youhuiinput">
+                <input type="text" placeholder=" 请输入优惠券领取码"/>
+                <a class="jihuo">激活</a>
+            </div>
+        </div>
+        <div class="jine">
+            <span class="yi">已优惠金额 ：<span>50元</span></span>
+            <span class="dai">待确定优惠金额 ：<span>0元</span></span>
+        </div>
+        <div class="kong"></div>
+        <div>
+            <div class="youji">
+                <i class="ion-ios-location-outline"></i>
+                <span class="zengpxinxi">赠品地址邮寄信息</span>
+                <a href="#tab/orderB">
+                       <span class="tianjiayouji">添加邮寄地址&nbsp;
+                           <i class="ion-ios-plus-outline"></i>
+                       </span>
+                </a>
+            </div>
+            <div class="dizhidiv">
+                <p class="dizhi">
+                    <input name="Fruit2" type="radio"id="Fruit21" checked/><label for="Fruit21">
+                    <span class="chengshi">Rose</span>
+                    <span class="chengshi">天津</span>
+                </label>
+
+                    <span class="shangai1">删除</span>
+                    <span class="shangai">修改</span>
+                </p>
+                <p class="dizhi">
+                    <input name="Fruit2" type="radio" id="Fruit22"/><label for="Fruit22">
+                    <span class="chengshi">Rose</span>
+                    <span class="chengshi">天津</span>
+                </label>
+
+
+                    <span class="shangai1">删除</span>
+                    <span class="shangai">修改</span>
+                </p>
+            </div>
+        </div>
+
+    </ion-content>
+    <div class="bar bar-footer bar-dark">
+        <div id="youhuidi"class="button button-icon "  ng-controller="touristNumController" ng-click="showDate()">
+           <span class="dizi">
+                订单总价 :<span>￥16680</span>
+            </span>
+        </div>
+        <div id="youhuidi1"class="button button-icon icon " ng-click="ewm(2)">
+            <button class="jiagequjain">快速预订</button>
+        </div>
+    </div>
+</ion-view>
+
+
+
+

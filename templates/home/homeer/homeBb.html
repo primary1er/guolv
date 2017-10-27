@@ -1,0 +1,336 @@
+<ion-view view-title="票务详情">
+
+<ion-content  delegate-handle="head">
+<div>
+    <!--图-->
+    <div class="homeDb">
+        <div class="homeBb1"><img src="img/h.jpg"></div>
+        <div class="homeB-a-1"><a href="#tab/home"><img src="img/houtui.png"></a></div>
+        <div class="homeB-a-2"><a href="#"><img src="img/fenxiang.png"></a></div>
+        <div class="homeB-a-3"><i class="ion-ios-heart-outline"></i></div>
+    </div>
+    <!---字--->
+    <div class="homeDb4">
+        <p>龙熙温泉假日酒店</p>
+        <span class="homeDb4span">￥<span>688</span>起</span>
+
+        <img src="img/dianzipw.jpg">
+
+    </div>
+
+    <div class="homeDb5"></div>
+    <div class="homeDb6">
+        <div class="homeDb6div"></div>
+        <span class="jiage">价格信息</span>
+        <i class="ion-chevron-right"></i>
+        <span class="shoupiao" ng-controller="ticketDateController" ng-click="showDate()">售票日期</span>
+        <span class="shoupiaoshijain">2015年12月8日</span>
+    </div>
+
+    <div class="button-bar">
+        <a class="afen">
+            <div class="afendiv">
+                <p>价格类型 ：1 , 龙熙温泉假日酒店</p>
+                <p>有效期 ：至<span>2016</span>年<span>4</span>月<span>30</span>日</p>
+                <div class="shouliangdiv">
+                    数量 ：
+                    <div class="shouliangdiv-1">
+                        <div class="selserver-4-3-0">
+                            <div ng-click="subnum(0)" class="selserver-4-3-1"><span class="homeBbspansub0">-</span></div>
+                            <div class="selserver-4-3-2 homeBbzj">0</div>
+                            <div ng-click="addnum(0)" class="selserver-4-3-3"><span class="homeBbspanadd0">+</span></div>
+                        </div>
+                    </div>
+
+                    <span class="afen1p">￥788元</span>
+                    <span class="afen1p1">￥688元</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="button-bar">
+        <a class="afen">
+            <div class="afendiv">
+                <p>价格类型 ：1 , 龙熙温泉假日酒店</p>
+                <p>有效期 ：至<span>2016</span>年<span>4</span>月<span>30</span>日</p>
+                <div class="shouliangdiv">
+                    数量 ：
+                    <div class="shouliangdiv-1">
+                        <div class="selserver-4-3-0">
+                            <div ng-click="subnum(1)" class="selserver-4-3-1"><span>-</span></div>
+                            <div class="selserver-4-3-2 homeBbzj">0</div>
+                            <div ng-click="addnum(1)" class="selserver-4-3-3"><span>+</span></div>
+                        </div>
+                    </div>
+
+                    <span class="afen1p">￥788元</span>
+                    <span class="afen1p1">￥688元</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="button-bar" ng-show="homeBb1.show">
+        <a class="afen">
+            <div class="afendiv">
+                <p>价格类型 ：1 , 龙熙温泉假日酒店</p>
+                <p>有效期 ：至<span>2016</span>年<span>4</span>月<span>30</span>日</p>
+                <div class="shouliangdiv">
+                    数量 ：
+                    <div class="shouliangdiv-1">
+                        <div class="selserver-4-3-0">
+                            <div ng-click="subnum(2)" class="selserver-4-3-1"><span>-</span></div>
+                            <div class="selserver-4-3-2 homeBbzj">0</div>
+                            <div ng-click="addnum(2)" class="selserver-4-3-3"><span>+</span></div>
+                        </div>
+                    </div>
+
+                    <span class="afen1p">￥788元</span>
+                    <span class="afen1p1">￥688元</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="homeDb7" ng-click="showhomeBb()">
+        <span>点击查看更多价格信息</span>
+    </div>
+    <div class="homeD-d-k"></div>
+    <div class="homeD-e">
+        <div class="button-bar sub-header-list">
+            <a class="button button-clear button-small clicked" ng-click="changTab(0)">产品介绍</a>
+            <a class="button button-clear button-small" ng-click="changTab(1)">景点介绍</a>
+            <a class="button button-clear button-small" ng-click="changTab(2)">游客须知</a>
+        </div>
+    </div>
+
+    <div class="b8zi" ng-show="menus.show_0">
+        <p class="b8zip">1产品信息 ：</p>
+        <p>  【使用方法】：收到电子码后提前拨打预约电话经行预约，预约成功后持入住人身份证前往酒店前台办理入住。预定一经确认，不可取消或更改！</p>
+        <p>  【预约电话】：010-56296615（周一至周日09:00-18:00）。</p>
+        <p>  【温馨提示】：本产品为特殊票务产品，一经售出，不退</p>
+        <img src="img/tuzhongzi.jpg">
+    </div>
+    <div class="b8zi" ng-show="menus.show_1">
+        <p class="b8zip">2产品信息 ：</p>
+        <p>  【使用方法】：收到电子码后提前拨打预约电话经行预约，预约成功后持入住人身份证前往酒店前台办理入住。预定一经确认，不可取消或更改！</p>
+        <p>  【预约电话】：010-56296615（周一至周日09:00-18:00）。</p>
+        <p>  【温馨提示】：本产品为特殊票务产品，一经售出，不退</p>
+        <img src="img/tuzhongzi.jpg">
+    </div>
+    <div class="b8zi" ng-show="menus.show_2">
+        <p class="b8zip">3产品信息 ：</p>
+        <p>  【使用方法】：收到电子码后提前拨打预约电话经行预约，预约成功后持入住人身份证前往酒店前台办理入住。预定一经确认，不可取消或更改！</p>
+        <p>  【预约电话】：010-56296615（周一至周日09:00-18:00）。</p>
+        <p>  【温馨提示】：本产品为特殊票务产品，一经售出，不退</p>
+        <img src="img/tuzhongzi.jpg">
+    </div>
+
+</div>
+<script id="date.html" type="text/ng-template">
+    <ion-modal-view class="modalBb slide-in-up ng-enter active ng-enter-active">
+        <ion-header-bar class="bar-positive">
+            <a class="button button-icon icon ion-ios-arrow-left"style="margin-left: 50px;"></a>
+            <h4 class="title"style="text-align: center">2015-12-12</h4>
+            <a class="button button-icon icon ion-ios-arrow-right"style="margin-right: 50px"></a>
+
+        </ion-header-bar>
+        <ion-content style="height: 100%">
+            <p style="margin-left: 15px;color: #6ab32c;margin-top: 10px">绿色代表可选日期</p>
+            <div class="time-warp" style="padding-bottom: 10px">
+                <table id="time">
+                    <thead>
+                    <tr class="week">
+                        <td class="first">日</td>
+                        <td>一</td>
+                        <td>二</td>
+                        <td>三</td>
+                        <td>四</td>
+                        <td>五</td>
+                        <td class="last">六</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- past的过期的日期 select是选中样式 -->
+                    <tr class="day">
+                        <td class="trl trr trb past">
+                            <p class="date-day-list-day"></p>
+                        </td>
+                        <td class="trr trb past">
+                            <p class="date-day-list-day"></p>
+                        </td>
+                        <td class="trr trb past">
+                            <p class="date-day-list-day"></p>
+                        </td>
+                        <td class="trr trb past">
+                            <p class="date-day-list-day"></p>
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">1</p>
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">2</p>
+
+                        </td>
+                        <td class="trb select">
+                            <p class="date-day-list-day">3</p>
+
+                        </td>
+                    </tr>
+                    <tr class="day">
+                        <td class="trl trr trb">
+                            <p class="date-day-list-day">4</p>
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">5</p>
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">6</p>
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">7</p>
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">8</p>
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">9</p>
+
+                        </td>
+                        <td class="trb">
+                            <p class="date-day-list-day">10</p>
+
+                        </td>
+                    </tr>
+                    <tr class="day">
+                        <td class="trl trr trb">
+                            <p class="date-day-list-day"><span class="riqi">11</span></p>
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day"><span>12</span></p>
+
+                        </td>
+                        <td class="trr trb immediate">
+                            <p class="date-day-list-day"><span>13</span></p>
+
+
+                        </td>
+                        <td class="trr trb immediate">
+                            <p class="date-day-list-day"><span>14</span></p>
+
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day"><span>15</span></p>
+
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day"><span>16</span></p>
+
+                        </td>
+                        <td class="trb">
+                            <p class="date-day-list-day"><span>17</span></p>
+
+                        </td>
+                    </tr>
+                    <tr class="day">
+                        <td class="trl trr trb">
+                            <p class="date-day-list-day"><span>18</span></p>
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day"><span>19</span></p>
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day"><span>20</span></p>
+
+                        </td>
+                        <td class="trr trb immediate">
+                            <p class="date-day-list-day"><span>21</span></p>
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day"><span>22</span></p>
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day"><span>23</span></p>
+
+                        </td>
+                        <td class="trb">
+                            <p class="date-day-list-day"><span>24</span></p>
+
+                        </td>
+                    </tr>
+                    <tr class="day">
+                        <td class="trl trr trb">
+                            <p class="date-day-list-day"><span>25</span></p>
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day"><span>26</span></p>
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day"><span>27</span></p>
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day"><span>28</span></p>
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day"><span>29</span></p>
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day"><span>30</span></p>
+
+                        </td>
+                        <td class="trb">
+                            <p class="date-day-list-day"><span>31</span></p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="button-bar">
+                <a class="button">取消</a>
+                <a class="button button-outline button-calm">确定</a>
+            </div>
+        </ion-content>
+    </ion-modal-view>
+</script>
+</ion-content>
+
+<div class="bar bar-footer bar-dark" style="padding: 0">
+        <div id="Bdi" href="#" class="button-icon " ng-click="ewm(1)">
+            <span class="Bdizi">
+                总价 ：
+                </span>
+            <span class="Bdizi1">￥16680</span>
+
+        </div>
+        <div id="Bdi1" href="#" class="button button-icon icon " ng-click="ewm(2)">
+            <i class="ion-ios-telephone"></i>
+            <span>电话咨询</span>
+        </div>
+        <div id="Bdi2" >
+            <a href="#tab/order">
+            下一步
+                </a>
+        </div>
+    </div>
+</ion-view>
+
+

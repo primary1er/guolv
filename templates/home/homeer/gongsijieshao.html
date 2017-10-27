@@ -1,0 +1,140 @@
+<ion-view view-title="公司介绍" hide-tabs>
+    <ion-content delegate-handle="head" >
+        <div class="cruise">
+            <ion-slide-box class="silde-img" does-continue="true" auto-play="true" slide-interval="2000">
+                <ion-slide>
+                    <img src="img/youlun.jpg"/>
+                </ion-slide>
+                <ion-slide>
+                    <img src="img/youlun.jpg"/>
+                </ion-slide>
+                <ion-slide>
+                    <img src="img/youlun.jpg"/>
+                </ion-slide>
+            </ion-slide-box>
+            <div class="homeD-a-1"><a href="#tab/home"><img src="img/houtui.png"></a></div>
+            <div class="homeD-a-2"><a href="#tab/cruise"><img src="img/fenxiang.png"></a></div>
+        </div>
+        <div class="gongsijieshao-1">
+            <h4>格式达邮轮公司</h4>
+            <div class="gongsijieshao-div1">世界上最年轻的公司世界上最年轻的公司世界上最年轻的公司世界上最年轻的公司世界上最年轻的公司世界上最年轻的公司世界上最年轻的公司世界上最年轻的公司世界上最年轻的公司</div>
+            <div class="gongsijieshao-div2"  ng-click="gsjechangge()"><i class="ion-chevron-down gsjechangge"></i></div>
+        </div>
+        <div class="gongsijieshao-2"></div>
+        <div class="gongsijieshao-3">
+            <div class="gongsixian"><span>旗下船只</span></div>
+            <ul class="gongsiul">
+                <li class="gongsiul-back" ng-click="shipScrollTo('huihuang')">辉煌号</li>
+                <li ng-click="shipScrollTo('miren')">迷人号</li>
+                <li>皇冠号</li>
+                <li>维多利亚号</li>
+                <li>赛琳娜号</li>
+                <li>命运女神号</li>
+                <li>太平洋号</li>
+                <li>大西洋号</li>
+            </ul>
+        </div>
+
+        <div class="gongsijieshao-5 huihuang">
+            <div class="gongsijieshao-4"></div>
+            <div class="gongsijieshao-5-1">
+                <div class="gongsijieshao-5-1div">
+                    <div class="gongsixian"><span>辉煌号</span></div>
+                    <img src="img/huihuanghao.jpg">
+                </div>
+                <div class="gongsijieshao-5-1div">
+                    <p class="gongsijieshao-5-1-p">
+                        <span>吨位：<span>114,500</span>吨</span>
+                        <span class="gongsijieshao-5-1-p-span">载客：<span>3,800</span>人</span>
+                        <span class="gongsijieshao-5-1-p-span">长度：<span>290</span>米</span>
+                    </p>
+                    <p class="gongsijieshao-5-1-p">
+                        <span>宽度：<span>35</span>米</span>
+                        <span class="gongsijieshao-5-1-p-span1">楼层：<span>14</span>层</span>
+                        <span class="gongsijieshao-5-1-p-span2">船速：<span>22</span>节</span>
+                    </p>
+                </div>
+                <div class="gongsijieshao-5-1-div">
+                    <div class="gongsijieshao-5-1-div1"></div>
+                    <span class="gongsijieshao-5-1-div-span">热门航线</span>
+                </div>
+                <div class="gongsijieshao-5-1-div-1">
+                    <p class="gongsijieshao-p-1">2016-2-12,2-20</p>
+                    <p class="gongsijieshao-p-2">加勒比海航线 多米尼加畅玩La Romana</p>
+                    <p class="gongsijieshao-p-3">出发 6天5晚</p>
+                    <p class="gongsijieshao-p-4">
+                        <span class="gongsijieshao-shu">￥12688</span>
+                        <span class="gongsijieshao-shu1">人/起</span>
+                        <span class="gongsijieshao-shu2">￥18788</span>
+                        <span class="gongsijieshao-shu3">北京上船</span>
+                    </p>
+                    <div class="gongsijieshao-you"><i class="ion-chevron-right"></i></div>
+                </div>
+                <div class="gongsijieshao-5-1-div-1">
+                    <p class="gongsijieshao-p-1">2016-2-12,2-20</p>
+                    <p class="gongsijieshao-p-2">加勒比海航线 多米尼加畅玩La Romana</p>
+                    <p class="gongsijieshao-p-3">出发 6天5晚</p>
+                    <p class="gongsijieshao-p-4">
+                        <span class="gongsijieshao-shu">￥12688</span>
+                        <span class="gongsijieshao-shu1">人/起</span>
+                        <span class="gongsijieshao-shu2">￥18788</span>
+                        <span class="gongsijieshao-shu3">北京上船</span>
+                    </p>
+                    <div class="gongsijieshao-you"><i class="ion-chevron-right"></i></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="gongsijieshao-5 miren">
+            <div class="gongsijieshao-4"></div>
+            <div class="gongsijieshao-5-1">
+                <div class="gongsijieshao-5-1div">
+                    <div class="gongsixian"><span>迷人号</span></div>
+                    <img src="img/huihuanghao.jpg">
+                </div>
+                <div class="gongsijieshao-5-1div">
+                    <p class="gongsijieshao-5-1-p">
+                        <span>吨位：<span>114,500</span>吨</span>
+                        <span class="gongsijieshao-5-1-p-span">载客：<span>3,800</span>人</span>
+                        <span class="gongsijieshao-5-1-p-span">长度：<span>290</span>米</span>
+                    </p>
+                    <p class="gongsijieshao-5-1-p">
+                        <span>宽度：<span>35</span>米</span>
+                        <span class="gongsijieshao-5-1-p-span1">楼层：<span>14</span>层</span>
+                        <span class="gongsijieshao-5-1-p-span2">船速：<span>22</span>节</span>
+                    </p>
+                </div>
+                <div class="gongsijieshao-5-1-div">
+                    <div class="gongsijieshao-5-1-div1"></div>
+                    <span class="gongsijieshao-5-1-div-span">热门航线</span>
+                </div>
+                <div class="gongsijieshao-5-1-div-1">
+                    <p class="gongsijieshao-p-1">2016-2-12,2-20</p>
+                    <p class="gongsijieshao-p-2">加勒比海航线 多米尼加畅玩La Romana</p>
+                    <p class="gongsijieshao-p-3">出发 6天5晚</p>
+                    <p class="gongsijieshao-p-4">
+                        <span class="gongsijieshao-shu">￥12688</span>
+                        <span class="gongsijieshao-shu1">人/起</span>
+                        <span class="gongsijieshao-shu2">￥18788</span>
+                        <span class="gongsijieshao-shu3">北京上船</span>
+                    </p>
+                    <div class="gongsijieshao-you"><i class="ion-chevron-right"></i></div>
+                </div>
+                <div class="gongsijieshao-5-1-div-1">
+                    <p class="gongsijieshao-p-1">2016-2-12,2-20</p>
+                    <p class="gongsijieshao-p-2">加勒比海航线 多米尼加畅玩La Romana</p>
+                    <p class="gongsijieshao-p-3">出发 6天5晚</p>
+                    <p class="gongsijieshao-p-4">
+                        <span class="gongsijieshao-shu">￥12688</span>
+                        <span class="gongsijieshao-shu1">人/起</span>
+                        <span class="gongsijieshao-shu2">￥18788</span>
+                        <span class="gongsijieshao-shu3">北京上船</span>
+                    </p>
+                    <div class="gongsijieshao-you"><i class="ion-chevron-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+
+

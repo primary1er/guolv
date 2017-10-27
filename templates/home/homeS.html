@@ -1,0 +1,189 @@
+<ion-view view-title="">
+    <div class="bar bar-subheader" style="top: 0px">
+        <div class="bar bar-header">
+            <a href="#tab/home" class="button button-icon icon ion-ios-arrow-left"style="color: #15a6fd"></a>
+            <label class="item-input-wrapper .calm-bg">
+                <input type="text" placeholder="豪礼相送">
+                <i class="icon ion-ios-search placeholder-icon icon-calm"id="xian"></i>
+            </label>
+            <a href=""class="soua"><span>北京</span><i class="ion-chevron-down"></i></a>
+        </div>
+    </div>
+
+    <ion-content style="top: 45px" delegate-handle="head">
+        <div class="soulishi">
+            <span style="color: #8dc4ed">历史</span><span>北戴河</span><span>拉萨</span>
+        </div>
+        <div class="">
+            <div id="souul">
+                <ion-scroll id="category-first-type" style="height: 100%" delegate-handle="left" class="scroll-view ionic-scroll"><div class="scroll" style="transform: translate3d(0px, 0px, 0px) scale(1);">
+                    <ul>
+                        <li class="eschan homeSchan" ng-click="ewm(0)">热门</li>
+                        <li class="homeSchan" ng-click="ewm(1)">周边</li>
+                        <li class="homeSchan" ng-click="ewm(2)" class="ulli">国内</li>
+                        <li class="homeSchan" ng-click="ewm(3)">港澳台</li>
+                        <li class="homeSchan" ng-click="ewm(4)">日韩朝蒙</li>
+                        <li class="homeSchan" ng-click="ewm(5)">东南亚</li>
+                        <li class="homeSchan" ng-click="ewm(6)">欧洲</li>
+                        <li class="homeSchan" ng-click="ewm(7)">美洲</li>
+                        <li class="homeSchan" ng-click="ewm(8)">澳中东非</li>
+                    </ul>
+                </div>
+                </ion-scroll>
+            </div>
+            <div id="souyou">
+                <ion-scroll id="category-first-type" style="height: 100%" delegate-handle="right" class="scroll-view ionic-scroll"><div class="scroll" style="transform: translate3d(0px, 0px, 0px) scale(1);">
+                    <div ng-show="menuState.show_0">
+                        <div class="souyou1">
+                            <div class="souyoudiv"><span>热门目的地1</span></div>
+                            <div class="souyoudiv1">
+                                <a href="#tab/homeD"><span>张家界</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                            </div>
+                        </div>
+                        <div class="souyou1">
+                            <div class="souyoudiv"><span>热门目的地1</span></div>
+                            <div class="souyoudiv1">
+                                <a><span>张家界</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-show="menuState.show_1">
+                        <div class="souyou1">
+                            <div class="souyoudiv"><span>热门目的地1</span></div>
+                            <div class="souyoudiv1">
+                                <a><span>张家界</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-show="menuState.show_2">
+                        <div class="souyou1">
+                            <div class="souyoudiv"><span>热门目的地2</span></div>
+                            <div class="souyoudiv1">
+                                <a><span>张家界</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-show="menuState.show_3">
+                        <div class="souyou1">
+                            <div class="souyoudiv"><span>热门目的地3</span></div>
+                            <div class="souyoudiv1">
+                                <a><span>张家界</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-show="menuState.show_4">
+                        <div class="souyou1">
+                            <div class="souyoudiv"><span>热门目的地4</span></div>
+                            <div class="souyoudiv1">
+                                <a><span>张家界</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-show="menuState.show_5">
+                        <div class="souyou1">
+                            <div class="souyoudiv"><span>热门目的地5</span></div>
+                            <div class="souyoudiv1">
+                                <a><span>张家界</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-show="menuState.show_6">
+                        <div class="souyou1">
+                            <div class="souyoudiv"><span>热门目的地6</span></div>
+                            <div class="souyoudiv1">
+                                <a><span>张家界</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-show="menuState.show_7">
+                        <div class="souyou1">
+                            <div class="souyoudiv"><span>热门目的地7</span></div>
+                            <div class="souyoudiv1">
+                                <a><span>张家界</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-show="menuState.show_8">
+                        <div class="souyou1">
+                            <div class="souyoudiv"><span>热门目的地8</span></div>
+                            <div class="souyoudiv1">
+                                <a><span>张家界</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                                <a><span>拉萨</span></a>
+                                <a><span>张家界</span></a>
+                                <a><span>丽江</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </ion-scroll>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

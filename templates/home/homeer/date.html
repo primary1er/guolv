@@ -1,0 +1,271 @@
+
+<ion-view view-title="选择日期">
+    <div class="bar bar-header" id="soutou">
+        <ion-nav-bar>
+            <ion-nav-back-button class="button-icon ion-ios-arrow-left dingdan">
+                返回
+            </ion-nav-back-button>
+        </ion-nav-bar>
+    </div>
+
+    <ion-content class="has-header order" delegate-handle="head" style="bottom: 44px">
+        <div class="date-1">
+            <span>绿色日期表示可即时确认</span>
+        </div>
+
+        <div class="date-2">
+            <a class="button button-clear ion-ios-arrow-left date-2-left"></a>
+            <div class="mouth-In">2015年12月</div>
+            <a class="button button-clear ion-ios-arrow-right date-2-right"></a>
+        </div>
+
+
+        <form id="form" action="">
+            <div class="time-warp">
+                <table id="time">
+                    <thead>
+                    <tr class="week">
+                        <td class="first">日</td>
+                        <td>一</td>
+                        <td>二</td>
+                        <td>三</td>
+                        <td>四</td>
+                        <td>五</td>
+                        <td class="last">六</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <!-- past的过期的日期 select是选中样式 -->
+                    <tr class="day">
+                        <td class="trl trr trb past">
+                            <p class="date-day-list-day"></p>
+                        </td>
+                        <td class="trr trb past">
+                            <p class="date-day-list-day"></p>
+                        </td>
+                        <td class="trr trb past">
+                            <p class="date-day-list-day">明天</p>
+                        </td>
+                        <td class="trr trb past">
+                            <p class="date-day-list-day">后天</p>
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">3</p>
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">4</p>
+                        </td>
+                        <td class="trb select dise">
+                            <p class="date-day-list-day">5</p>
+                            <span class="dise-2">促</span>
+                            <p class="date-day-list-bc">余9位</p>
+                        </td>
+                    </tr>
+
+                    <tr class="day">
+                        <td class="trl trr trb">
+                            <p class="date-day-list-day">6</p>
+                        </td>
+
+
+                        <td class="trr trb">
+                            <p class="date-day-list-day">7</p>
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">8</p>
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day se">9</p>
+                            <span class="dise-2red">秒</span>
+                            <p class="date-day-list-bc1">余12位</p>
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">10</p>
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">11</p>
+
+
+                        </td>
+                        <td class="trb">
+                            <p class="date-day-list-day">12</p>
+                        </td>
+                    </tr>
+                    <tr class="day">
+                        <td class="trl trr trb">
+                            <p class="date-day-list-day">13</p>
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day se2">14</p>
+                            <span class="dise-2red">促</span>
+                            <p class="date-day-list-bc2">余9位</p>
+                        </td>
+                        <td class="trr trb immediate">
+                            <p class="date-day-list-day">15</p>
+                        </td>
+                        <td class="trr trb immediate">
+                            <p class="date-day-list-day">16</p>
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">17</p>
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">18</p>
+                        </td>
+                        <td class="trb">
+                            <p class="date-day-list-day">19</p>
+                        </td>
+                    </tr>
+                    <tr class="day">
+                        <td class="trl trr trb">
+                            <p class="date-day-list-day">20</p>
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">21</p>
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">22</p>
+                        </td>
+                        <td class="trr trb immediate">
+                            <p class="date-day-list-day">23</p>
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">24</p>
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day se3">25</p>
+                            <span class="dise-2red">促</span>
+                            <p class="date-day-list-bc3">余9位</p>
+                        </td>
+                        <td class="trb">
+                            <p class="date-day-list-day">26</p>
+                        </td>
+                    </tr>
+                    <tr class="day">
+                        <td class="trl trr trb">
+                            <p class="date-day-list-day">27</p>
+
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">28</p>
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">29</p>
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day">30</p>
+                        </td>
+                        <td class="trr trb">
+                            <p class="date-day-list-day se4">31</p>
+                            <span class="dise-2red">售</span>
+                            <p class="date-day-list-bc4">余9位</p>
+                        </td>
+
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="date-3">
+                    <div class="date-3-1">出发日期 :&nbsp;<span>2015-12-14</span></div>
+                    <div class="date-3-2">截止日期 :&nbsp;<span>2015-12-14</span></div>
+                </div>
+
+                <div class="date-4">
+                    <div class="date-4-1">
+                        价格类型:
+                    </div>
+
+                    <div class="date-4-2">
+                        <div>
+                            <span ng-click="datechangge(0)" class="datechange">三星酒店标准</span>
+                            <span ng-click="datechangge(1)"  class="date-4-2back date-4-2ba datechange">四星酒店标准</span>
+                            <span ng-click="datechangge(2)"  class="datechange">海景别墅</span>
+                            <span ng-click="datechangge(3)"  class="datechange">度假别墅</span>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="date-4-0">
+                    <p>起价说明：本起价是按双人出行共用一间房核算的担任价格。起价说明：本起价是按双人出行共用一间房核算的担任价格。双人出行共用一间房核算的担任价格。起价说明：本起价是按双人出行共用一间房核算的担任价格。</p>                </div>
+                <div class="date-5">
+                    <div class="date-5-1">
+                        选择出行人数
+                    </div>
+
+                    <ul>
+                        <li>
+                            <div class="date-5-2-1">成人价</div>
+                            <div class="date-5-2-2"><span>￥</span><span class="date-5-2-2-1">15688</span><span>/人</span></div>
+
+                            <div class="date-5-2-3">
+                                <div ng-click="subnumdata(0)" class="selserver-4-3-1"><span>-</span></div>
+                                <div class="selserver-4-3-2 dateaddsub">0</div>
+                                <div ng-click="addnumdata(0)" class="selserver-4-3-3"><span>+</span></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="date-5-2-1">成人价</div>
+                            <div class="date-5-2-2"><span>￥</span><span class="date-5-2-2-1">15688</span><span>/人</span></div>
+
+                            <div class="date-5-2-3">
+                                <div ng-click="subnumdata(1)" class="selserver-4-3-1"><span>-</span></div>
+                                <div class="selserver-4-3-2 dateaddsub">0</div>
+                                <div ng-click="addnumdata(1)" class="selserver-4-3-3"><span>+</span></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="date-5-2-1">成人价</div>
+                            <div class="date-5-2-2"><span>￥</span><span class="date-5-2-2-1">15688</span><span>/人</span></div>
+
+                            <div class="date-5-2-3">
+                                <div ng-click="subnumdata(2)" class="selserver-4-3-1"><span>-</span></div>
+                                <div class="selserver-4-3-2 dateaddsub">0</div>
+                                <div ng-click="addnumdata(2)" class="selserver-4-3-3"><span>+</span></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="date-5-2-1">成人价</div>
+                            <div class="date-5-2-2"><span>￥</span><span class="date-5-2-2-1">15688</span><span>/人</span></div>
+
+                            <div class="date-5-2-3">
+                                <div ng-click="subnumdata(3)" class="selserver-4-3-1"><span>-</span></div>
+                                <div class="selserver-4-3-2 dateaddsub">0</div>
+                                <div ng-click="addnumdata(3)" class="selserver-4-3-3"><span>+</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="date-4-0">
+                    <p>起价说明：本起价是按双人出行共用一间房核算的担任价格。起价说明：本起价是按双人出行共用一间房核算的担任价格。双人出行共用一间房核算的担任价格。起价说明：本起价是按双人出行共用一间房核算的担任价格。</p>
+                </div>
+            </div>
+
+            </div>
+
+
+        </form>
+
+
+
+
+    </ion-content>
+
+
+    <div class="bar bar-footer bar-dark" style="padding: 0">
+        <a id="data-siren" href="#" ng-click="showModal()">&nbsp;&nbsp;&nbsp;
+            总价：250088元
+        </a>
+        <a id="data-siren1" href="#">
+            下一步
+        </a>
+    </div>
+</ion-view>
+
+

@@ -1,0 +1,386 @@
+<ion-view view-title="游轮搜索结果">
+    <ion-content style="background:#f3f4f6 " delegate-handle="head">
+        <div class="homeD-a">
+            <ion-slide-box class="silde-img" does-continue="true" auto-play="true" slide-interval="2000">
+                <ion-slide>
+                    <img src="img/youlun.jpg"/>
+                </ion-slide>
+                <ion-slide>
+                    <img src="img/youlun.jpg"/>
+                </ion-slide>
+                <ion-slide>
+                    <img src="img/youlun.jpg"/>
+                </ion-slide>
+
+            </ion-slide-box>
+            <div class="homeD-a-1"><a href="#tab/home"><img src="img/houtui.png"></a></div>
+            <div class="homeD-a-2"><a href="#"><img src="img/fenxiang.png"></a></div>
+            <div class="homeD-a-3"><i class="ion-ios-heart-outline"></i></div>
+            <div class="homeD-a-4">
+                <a href="#">
+                    <i class="ion-ios-location" style="color: #fff"></i>
+                    <span>&nbsp北京出发</span>
+                    <span>&nbsp&nbsp路线编号:</span>
+                    <span>04001406323</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="homeD-b">
+            <h4>【地中海航线】水晶和韵号地中海爱琴海探秘之旅<从蒙特卡洛到雅典>，水晶和韵号将向您展开爱琴之旅</h4>
+
+            <div class="homeD-b-1">
+                <span>￥</span><span class="homeD-span1">15688</span><span>人/起</span>
+                <span class="homeD-b-2">￥19988人/起</span>
+                <span class="homeD-b-3">行程天数:&nbsp;5天</span>
+            </div>
+        </div>
+
+        <div class="homeD-c list" style="padding: 0px">
+            <a href="#" class="item" style="border: none;margin-top: 0px;">
+                <span class="homeD-c-span">预售</span>
+                <span class="homeD-c-span">预售</span>
+                <span class="homeD-c-span">预售</span>
+                <span class="homeD-c-span">预售</span>
+                <i class="ion-chevron-right homeD-c-i"></i>
+            </a>
+
+        </div>
+
+        <div class="homeD-d">
+            <img class="homeD-c-3" src="img/youlun-1.png">
+            <span class="Despan">航海区域 ：</span><span class="Despan1">地中海航线</span>
+        </div>
+        <div class="homeDe-d">
+            <span class="Despan">邮轮名称 ：</span><span class="Despan1">和韵号</span><i class="icon-right ion-chevron-right button-calm"id="De-e1i"></i>
+        </div>
+        <div class="homeDe-d">
+            <span class="Despan">邮轮公司 ：</span><span class="Despan1">水晶邮轮</span><i class="icon-right ion-chevron-right button-calm"id="De-e1i"></i>
+        </div>
+        <div class="homeDe-e">
+            <div class="homeDe-e1">
+                <img class="homeDe-e1-3" src="img/changku.png">
+                <span class="Dedspan">仓房介绍：</span><i class="icon-right ion-chevron-right button-calm" id="De-e1i"></i><span class="Dedspan1">出团日期</span><span class="Dedspan2">2015年12月8号</span>
+            </div>
+            <div class="homeDd-1-a">
+                <img class="homeDe-1-a-img1" src="img/youluntu (1).jpg">
+                <div class="homeDe-1-adiv">
+                    <p class="homeDe-1-adiv-p">内仓房</p>
+                    <span class="homeDe-1-adiv-span">无窗</span>
+                    <p class="homeDe-1-adiv-span">房间大小：12.5~14.8平方米</p>
+                    <p class="homeDe-1-adiv-p1"><span class="p1span">优惠价 : ￥<span>15688</span></span>人/起</p>
+                </div>
+            </div>
+            <div class="homeDd-1-a">
+                <img class="homeDe-1-a-img1" src="img/youluntu (2).jpg">
+                <div class="homeDe-1-adiv">
+                    <p class="homeDe-1-adiv-p">内仓房</p>
+                    <span class="homeDe-1-adiv-span">无窗</span>
+                    <p class="homeDe-1-adiv-span">房间大小：12.5~14.8平方米</p>
+                    <p class="homeDe-1-adiv-p1"><span class="p1span">优惠价 : ￥<span>15688</span></span>人/起</p>
+                </div>
+            </div>
+            <div class="homeDd-1-a">
+                <img class="homeDe-1-a-img1" src="img/youluntu (3).jpg">
+                <div class="homeDe-1-adiv">
+                    <p class="homeDe-1-adiv-p">内仓房</p>
+                    <span class="homeDe-1-adiv-span">无窗</span>
+                    <p class="homeDe-1-adiv-span">房间大小：12.5~14.8平方米</p>
+                    <p class="homeDe-1-adiv-p1"><span class="p1span">优惠价 : ￥<span>15688</span></span>人/起</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="homeD-d-k"></div>
+        <div class="homeD-e">
+            <div class="button-bar sub-header-list">
+                <a class="button button-clear button-small clicked" ng-click="changTab(0)">行程详情</a>
+                <a class="button button-clear button-small" ng-click="changTab(1)">预定须知</a>
+                <a class="button button-clear button-small" ng-click="changTab(2)">线路特色</a>
+            </div>
+        </div>
+        <div ng-show="menus.show_0" class="xingchengxiangq">
+            <div class="homeD-f">
+                <div class="homeD-f-1">
+                    <span class="homeD-f-2">第1天</span>
+                    <span class="homeD-f-4">北京</span><img class="homeD-f-4" src="img/homed-a-3.png"/>
+                    <span>巴厘岛</span><img class="homeD-f-4" src="img/homed-a-3.png"/>
+                    <span>巴厘岛</span>
+                </div>
+
+                <div class="homeD-f-5">
+                    <img class="homeD-f-5-1" src="img/homed-a-4.png">
+                    <span>景点&nbsp;:</span><span class="homeD-f-5-2">&nbsp;海神庙</span><br>
+
+                </div>
+
+                <div class="homeD-f-6">
+                    <img class="homeD-f-5-1" src="img/homed-a-5.png">
+                    <span>早餐&nbsp;:</span><span>&nbsp;自理</span><br>
+                    <span class="homeD-f-6-1">午餐&nbsp;:</span><span>&nbsp;自理</span><br>
+                    <span class="homeD-f-6-1">晚餐&nbsp;:</span><span>&nbsp;自理</span><br>
+                </div>
+
+                <div class="homeD-f-7">
+                    <img class="homeD-f-5-1" src="img/homed-a-6.png.png">
+                    <span class="homeD-f-7-1"><span>入住&nbsp;:</span>&nbsp;泳池别墅（参考）：Athena Villa 或S额卡人NUSA或Alang Alang 或Halcyon等。<br/>仅供参考，最终确认以出团通知书为准</span>
+                    <p class="homeD-f-7-2">于首都国际机场集合，搭乘国际航班飞机飞往度假胜地-巴厘岛，美女送上鲜花后再搭乘巴士游览沿途风光回酒店休息。</p>
+                </div>
+            </div>
+
+            <div class="homeD-f">
+                <div class="homeD-f-1">
+                    <span class="homeD-f-2">第2天</span>
+                    <span class="homeD-f-4">巴厘岛</span><img class="homeD-f-4" src="img/homed-a-3.png"/>
+                    <span>海神庙</span>
+                </div>
+
+                <div class="homeD-f-5">
+                    <img class="homeD-f-5-1" src="img/homed-a-4.png">
+                    <span>景点&nbsp;:</span><span class="homeD-f-5-2">&nbsp;海神庙</span><br>
+                    <img class="homeD-f-5-3" src="img/homed-a-11.jpg"><img class="homeD-f-5-4" src="img/homed-a-12.jpg">
+                </div>
+
+                <div class="homeD-f-6">
+                    <img class="homeD-f-5-1" src="img/homed-a-5.png">
+                    <span>早餐&nbsp;:</span><span>&nbsp;自理</span><br>
+                    <span class="homeD-f-6-1">午餐&nbsp;:</span><span>&nbsp;自理</span><br>
+                    <span class="homeD-f-6-1">晚餐&nbsp;:</span><span>&nbsp;自理</span><br>
+                </div>
+
+                <div class="homeD-f-7">
+                    <img class="homeD-f-5-1" src="img/homed-a-6.png.png">
+                    <span class="homeD-f-7-1"><span>入住&nbsp;:</span>&nbsp;泳池别墅（参考）：Athena Villa 或S额卡人NUSA或Alang Alang 或Halcyon等。<br/>仅供参考，最终确认以出团通知书为准</span>
+
+                    <div>
+                        <div class="homeDe-f-7-2 homeDachange0">
+                            金巴兰海滩（Jimbanran Beach）是整个巴厘岛最令人感到亲切的一片海滩。原来这里还是一个小小的渔村，居住着岛上最淳朴的村民。自从漂亮的饭店盖起来之后，一下子就吸引了大批喜欢自然的欧洲人过来度假。难能可贵的是，这些商业
+                            <span id="Dacangzi"></span></div>
+                        <div class="homeD-f-7-3" ng-click="homeDe1228(0)">
+                            <i class="ion-ios-arrow-down homeDec1"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="homeD-f">
+                <div class="homeD-f-1">
+                    <span class="homeD-f-2">第3天</span>
+                    <span class="homeD-f-4">巴厘岛</span><img class="homeD-f-4" src="img/homed-a-3.png"/>
+                    <span>海神庙</span>
+                </div>
+
+                <div class="homeD-f-5">
+                    <img class="homeD-f-5-1" src="img/homed-a-4.png">
+                    <span>景点&nbsp;:</span><span class="homeD-f-5-2">&nbsp;海神庙</span><br>
+                    <img class="homeD-f-5-3" src="img/homed-a-11.jpg"><img class="homeD-f-5-4" src="img/homed-a-12.jpg">
+                </div>
+
+                <div class="homeD-f-6">
+                    <img class="homeD-f-5-1" src="img/homed-a-5.png">
+                    <span>早餐&nbsp;:</span><span>&nbsp;自理</span><br>
+                    <span class="homeD-f-6-1">午餐&nbsp;:</span><span>&nbsp;自理</span><br>
+                    <span class="homeD-f-6-1">晚餐&nbsp;:</span><span>&nbsp;自理</span><br>
+                </div>
+
+                <div class="homeD-f-7">
+                    <img class="homeD-f-5-1" src="img/homed-a-6.png.png">
+                    <span class="homeD-f-7-1"><span>入住&nbsp;:</span>&nbsp;泳池别墅（参考）：Athena Villa 或S额卡人NUSA或Alang Alang 或Halcyon等。<br/>仅供参考，最终确认以出团通知书为准</span>
+
+                    <div>
+                        <div class="homeDe-f-7-2 homeDachange0">
+                            金巴兰海滩（Jimbanran Beach）是整个巴厘岛最令人感到亲切的一片海滩。原来这里还是一个小小的渔村，居住着岛上最淳朴的村民。自从漂亮的饭店盖起来之后，一下子就吸引了大批喜欢自然的欧洲人过来度假。难能可贵的是，这些商业
+                            <span id="Dacangzi"></span></div>
+                        <div class="homeD-f-7-3" ng-click="homeDe1228(1)">
+                            <i class="ion-ios-arrow-down homeDec1"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="homeD-f">
+                <div class="homeD-f-1">
+                    <span class="homeD-f-2">第4天</span>
+                    <span class="homeD-f-4">巴厘岛</span><img class="homeD-f-4" src="img/homed-a-3.png"/>
+                    <span>海神庙</span>
+                </div>
+
+                <div class="homeD-f-5">
+                    <img class="homeD-f-5-1" src="img/homed-a-4.png">
+                    <span>景点&nbsp;:</span><span class="homeD-f-5-2">&nbsp;海神庙</span><br>
+                    <img class="homeD-f-5-3" src="img/homed-a-11.jpg"><img class="homeD-f-5-4" src="img/homed-a-12.jpg">
+                </div>
+
+                <div class="homeD-f-6">
+                    <img class="homeD-f-5-1" src="img/homed-a-5.png">
+                    <span>早餐&nbsp;:</span><span>&nbsp;自理</span><br>
+                    <span class="homeD-f-6-1">午餐&nbsp;:</span><span>&nbsp;自理</span><br>
+                    <span class="homeD-f-6-1">晚餐&nbsp;:</span><span>&nbsp;自理</span><br>
+                </div>
+
+                <div class="homeD-f-7">
+                    <img class="homeD-f-5-1" src="img/homed-a-6.png.png">
+                    <span class="homeD-f-7-1"><span>入住&nbsp;:</span>&nbsp;泳池别墅（参考）：Athena Villa 或S额卡人NUSA或Alang Alang 或Halcyon等。<br/>仅供参考，最终确认以出团通知书为准</span>
+
+                    <div>
+                        <div class="homeDe-f-7-2 homeDachange0">
+                            金巴兰海滩（Jimbanran Beach）是整个巴厘岛最令人感到亲切的一片海滩。原来这里还是一个小小的渔村，居住着岛上最淳朴的村民。自从漂亮的饭店盖起来之后，一下子就吸引了大批喜欢自然的欧洲人过来度假。难能可贵的是，这些商业
+                            <span id="Dacangzi"></span></div>
+                        <div class="homeD-f-7-3" ng-click="homeDe1228(2)">
+                            <i class="ion-ios-arrow-down homeDec1"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="homeD-f">
+                <div class="homeD-f-1">
+                    <span class="homeD-f-2">第2天</span>
+                    <span class="homeD-f-4">巴厘岛</span><img class="homeD-f-4" src="img/homed-a-3.png"/>
+                    <span>海神庙</span>
+                </div>
+
+                <div class="homeD-f-5">
+                    <img class="homeD-f-5-1" src="img/homed-a-4.png">
+                    <span>景点&nbsp;:</span><span class="homeD-f-5-2">&nbsp;海神庙</span><br>
+                    <img class="homeD-f-5-3" src="img/homed-a-11.jpg"><img class="homeD-f-5-4" src="img/homed-a-12.jpg">
+                </div>
+
+                <div class="homeD-f-6">
+                    <img class="homeD-f-5-1" src="img/homed-a-5.png">
+                    <span>早餐&nbsp;:</span><span>&nbsp;自理</span><br>
+                    <span class="homeD-f-6-1">午餐&nbsp;:</span><span>&nbsp;自理</span><br>
+                    <span class="homeD-f-6-1">晚餐&nbsp;:</span><span>&nbsp;自理</span><br>
+                </div>
+
+                <div class="homeD-f-7">
+                    <img class="homeD-f-5-1" src="img/homed-a-6.png.png">
+                    <span class="homeD-f-7-1"><span>入住&nbsp;:</span>&nbsp;泳池别墅（参考）：Athena Villa 或S额卡人NUSA或Alang Alang 或Halcyon等。<br/>仅供参考，最终确认以出团通知书为准</span>
+
+                    <div>
+                        <div class="homeDe-f-7-2 homeDachange0">
+                            金巴兰海滩（Jimbanran Beach）是整个巴厘岛最令人感到亲切的一片海滩。原来这里还是一个小小的渔村，居住着岛上最淳朴的村民。自从漂亮的饭店盖起来之后，一下子就吸引了大批喜欢自然的欧洲人过来度假。难能可贵的是，这些商业
+                            <span id="Dacangzi"></span></div>
+                        <div class="homeD-f-7-3" ng-click="homeDe1228(3)">
+                            <i class="ion-ios-arrow-down homeDec1"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="yudingxuzhi" ng-show="menus.show_1">
+            <ul>
+                <a href="#tab/home-a-a"><li><img class="ydxq-1" src="img/qian-(4)_10.png"/><span>费用说明</span><img class="ydxq-2" src="img/lanyou.png"/></li></a>
+                <a href="#tab/home-a-b"><li><img class="ydxq-1" src="img/qian-(4)_13.png"/><span>签证信息</span><img class="ydxq-2" src="img/lanyou.png"/></li></a>
+                <a href="#tab/home-a-c"><li><img class="ydxq-1" src="img/qian-(4)_15.png"/><span>温馨提示</span><img class="ydxq-2" src="img/lanyou.png"/></li></a>
+                <a href="#tab/home-a-d"><li><img class="ydxq-1" src="img/qian-(4)_17.png"/><span>签约付款</span><img class="ydxq-2" src="img/lanyou.png"/></li></a>
+            </ul>
+        </div>
+
+        <div class="xianlutese" ng-show="menus.show_2">
+            <div class="xlte-1">
+                <img src="img/xing.png">
+                <span>线路特色</span>
+            </div>
+
+            <div class="xlte-2">
+                <ul>
+                    <li><span>东航直飞:</span><span>直达巴厘岛-免签海岛，世外桃源世外桃源世外桃源世外桃源世外桃源！贴心为您赠送接机服务</span></li>
+                    <li><span>优惠促销:</span><span>直达巴厘岛-免签海岛，世外桃源！世外桃源世外桃源世外桃源</span></li>
+                    <li><span>贴心赠送:</span><span>直达巴厘岛-免签海岛，世外桃源！免签海岛免签海岛免签海岛</span></li>
+                    <li><span>一卡通服务:</span><span>巴士接送热门景区8条路线</span></li>
+                    <li><span>一卡通服务:</span><span>多语言服务（中文）台语</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="Dg">
+            <ul>
+                <li class="Dedizuo"><img src="img/D (6).png"><span>电话咨询</span></li>
+                <li><img src="img/D (6).png"><span>费用说明</span></li>
+                <li class="Dedizuo"><img src="img/D (6).png"><span>签证信息</span></li>
+                <li><img src="img/D (6).png"><span>温馨提示</span></li>
+                <li class="Dedizuo"><img src="img/D (6).png"><span>预订须知</span></li>
+                <li><img src="img/D (6).png"><span>签约付款</span></li>
+
+            </ul>
+        </div>
+        <div class="Dh"></div>
+        <script id="tourist.html" type="text/ng-template">
+            <ion-modal-view class="modalDe slide-in-up ng-enter active ng-enter-active">
+                <ion-content style="bottom:0px">
+                    <div class="list" style="background: #fff;margin-top: -1px;margin-right: -3px;margin-bottom: 0px" >
+                        <div class="item bar bar-header bar-dark">
+                            <h3 class="title" style="text-align: left">标准内仓2人房</h3>
+                            <a class="button icon ion-close-circled icon-right" ng-click="closeDetail()" style="font-size: 20px;background: #324150"></a>
+                        </div>
+                        <label class="item item-radio" style="margin: 0px 15px; margin-top: 1px;border: 0;border-bottom: 1px solid #e2e2e2">
+                            <input type="radio" name="group" value="go">
+                            <div class="radio-content">
+                                <div class="item-content" style="float: left;padding: 15px 0px;font-size: 12px">
+                                    <div>2015-12-10 出发</div>
+                                    <div>2015-12-10 返回</div>
+                                </div>
+                                <div class="item-content" style="float: left;font-size: 12px;padding: 21px 29px 21px 9px;">
+                                    <span style="color: #ff7960;font-size: 16px">￥16888</span> 人/起
+                                </div>
+                                <i class="radio-icon ion-android-radio-button-on" style="margin-right: -10px; margin-top: 5px; font-size: 20px;"></i>
+                            </div>
+                        </label>
+                        <label class="item item-radio" style="margin: 0px 15px; margin-top: 1px;border: 0;border-bottom: 1px solid #e2e2e2">
+                            <input type="radio" name="group" value="go">
+                            <div class="radio-content">
+                                <div class="item-content" style="float: left;padding: 15px 0px;font-size: 12px">
+                                    <div>2015-12-10 出发</div>
+                                    <div>2015-12-10 返回</div>
+                                </div>
+                                <div class="item-content" style="float: left;font-size: 12px;padding: 21px 29px 21px 9px;">
+                                    <span style="color: #ff7960;font-size: 16px">￥16888</span> 人/起
+                                </div>
+                                <i class="radio-icon ion-android-radio-button-on" style="margin-right: -10px; margin-top: 5px; font-size: 20px;"></i>
+                            </div>
+                        </label>
+                        <label class="item item-radio" style="margin: 0px 15px; margin-top: 1px;border: 0;border-bottom: 1px solid #e2e2e2">
+                            <input type="radio" name="group" value="go">
+                            <div class="radio-content">
+                                <div class="item-content" style="float: left;padding: 15px 0px;font-size: 12px">
+                                    <div>2015-12-10 出发</div>
+                                    <div>2015-12-10 返回</div>
+                                </div>
+                                <div class="item-content" style="float: left;font-size: 12px;padding: 21px 29px 21px 9px;">
+                                    <span style="color: #ff7960;font-size: 16px">￥16888</span> 人/起
+                                </div>
+                                <i class="radio-icon ion-android-radio-button-on" style="margin-right: -10px; margin-top: 5px; font-size: 20px;"></i>
+                            </div>
+                        </label>
+                        <div class="bar bar-footer item" style="padding: 0px">
+                            <button class="button button-clear"style="width: 50%;padding: 5px 0;border-right:1px solid #e2e2e2 " ng-click="cancelDate()">取消</button>
+                            <button class="button button-clear button-calm"style="width: 50%" ng-click="okDate()">确认</button>
+                        </div>
+                    </div>
+                </ion-content>
+            </ion-modal-view>
+        </script>
+    </ion-content>
+    <div class="bar bar-footer bar-dark">
+        <div id="youhuidi" href="#" class="button button-icon "  ng-controller="touristNumController" ng-click="showDate()">
+            <i class="ion-android-calendar"></i>
+            <span class="dizi">
+                查询/选择团期
+            </span>
+
+            <i class="ion-chevron-up"></i>
+        </div>
+        <div id="youhuidi1" >
+
+            <a href="#tab/order" class="jiagequjain">
+                立即预订
+            </a>
+        </div>
+    </div>
+</ion-view>
+
+

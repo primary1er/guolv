@@ -1,0 +1,204 @@
+
+<ion-view view-title="我的订单">
+    <div class="bar bar-header" id="soutou">
+        <ion-nav-bar>
+            <ion-nav-back-button class="button-icon ion-ios-arrow-left dingdan">
+                返回
+            </ion-nav-back-button>
+        </ion-nav-bar>
+    </div>
+
+    <ion-content class="has-header order1" delegate-handle="head">
+        <ion-scroll direction="x" scrollbar-x="false" style="background: #ffffff">
+            <!--这是二级菜单-->
+            <div class="button-bar sub-header-list myorderlist">
+                <a class="button button-clear clicked" ng-click="myorderTab(15,0)">全部</a>
+                <a class="button button-clear" ng-click="myorderTab(1,1)">待付款</a>
+                <a class="button button-clear" ng-click="myorderTab(27,2)">待评论</a>
+                <a class="button button-clear" ng-click="myorderTab(15,3)">待签约</a>
+
+            </div>
+        </ion-scroll>
+        <div>
+            <ul>
+                <li>
+                    <div class="myorder-1">
+                    <span>
+                        出境游，国内游
+                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="myorder-2">
+                        <div class="myorder-2-1">
+                            <div><img class="myorder-2-1-1" src="img/sousuotu (1).jpg"></div>
+                            <img class="myorder-2-1-2" src="img/biaoqian (2).png"/>
+                        </div>
+
+                        <div class="myorder-2-2">
+                            <ul>
+                                <li ng-click="myordericon(0)" class="orderspan"><a>伊斯但布尔8日深度游，欧洲游</a></li>
+                                <li><span>出发日期&nbsp;:</span><span>&nbsp;2015年12月7日</span></li>
+                                <li><span>订单号:&nbsp;</span><span>&nbsp;600801539</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="myorder-2-3">
+                            <span class="myorder-2-3-1">北京出发</span>
+                            <br>
+                            <span class="myorder-2-3-2">￥15688</span>
+                        </div>
+
+                        <div class="myorder-2-4" ng-show="myorderi.show_0">
+                            <p>
+                                <span>无需面试</span>
+                                <span>无需面试</span>
+                                <span>无需面试</span>
+                                <span>无需面试</span>
+                                <span>无需面试</span>
+                                <span>无需面试</span>
+                            </p>
+                        </div>
+
+                        <div class="myorder-2-5">
+                            <a href="#" ng-click="myordericon(0)">
+                                <i class="ion-ios-arrow-down changeicon"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="myorder-2">
+                        <div class="myorder-2-1">
+                            <div><img class="myorder-2-1-1" src="img/sousuotu (1).jpg"></div>
+                            <img class="myorder-2-1-2" src="img/biaoqian (2).png"/>
+                        </div>
+
+                        <div class="myorder-2-2">
+                            <ul>
+                                <li ng-click="myordericon(1)" class="orderspan"><a>伊斯但布尔8日深度游，欧洲游</a></li>
+                                <li><span>出发日期&nbsp;:</span><span>&nbsp;2015年12月7日</span></li>
+                                <li><span>订单号:&nbsp;</span><span>&nbsp;600801539</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="myorder-2-3">
+                            <span class="myorder-2-3-1">北京出发</span>
+                            <br>
+                            <span class="myorder-2-3-2">￥15688</span>
+                        </div>
+
+                        <div class="myorder-2-4" ng-show="myorderi.show_1">
+                            <p>
+                                <a href="#"><span>无需面试</span></a>
+                                <a href="#"><span>无需面试</span></a>
+                                <a href="#"><span>无需面试</span></a>
+                                <a href="#"><span>无需面试</span></a>
+                            </p>
+                            <p><a href="#"><span>无需面试</span></a>
+                                <a href="#"><span>无需面试</span></a></p>
+
+                        </div>
+
+                        <div class="myorder-2-5">
+                            <a href="#" ng-click="myordericon(1)">
+                                <i class="ion-ios-arrow-down changeicon"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="myorder-2">
+                        <div class="myorder-2-1">
+                            <div><img class="myorder-2-1-1" src="img/sousuotu (1).jpg"></div>
+                            <img class="myorder-2-1-2" src="img/biaoqian (2).png"/>
+                        </div>
+
+                        <div class="myorder-2-2">
+                            <ul>
+                                <li ng-click="myordericon(2)" class="orderspan"><a>伊斯但布尔8日深度游，欧洲游</a></li>
+                                <li><span>出发日期&nbsp;:</span><span>&nbsp;2015年12月7日</span></li>
+                                <li><span>订单号:&nbsp;</span><span>&nbsp;600801539</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="myorder-2-3">
+                            <span class="myorder-2-3-1">北京出发</span>
+                            <br>
+                            <span class="myorder-2-3-2">￥15688</span>
+                        </div>
+
+                        <div class="myorder-2-4" ng-show="myorderi.show_2">
+                            <p>
+                                <a href="#"><span>无需面试</span></a>
+                                <a href="#"><span>无需面试</span></a>
+                                <a href="#"><span>无需面试</span></a>
+                                <a href="#"><span>无需面试</span></a>
+                            </p>
+                            <p><a href="#"><span>无需面试</span></a>
+                                <a href="#"><span>无需面试</span></a></p>
+
+                        </div>
+
+                        <div class="myorder-2-5">
+                            <a href="#" ng-click="myordericon(2)">
+                                <i class="ion-ios-arrow-down changeicon"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="myorder-2" ng-show="myordiv.show">
+                        <div class="myorder-2-1">
+                            <div><img class="myorder-2-1-1" src="img/sousuotu (1).jpg"></div>
+                            <img class="myorder-2-1-2" src="img/biaoqian (2).png"/>
+                        </div>
+
+                        <div class="myorder-2-2">
+                            <ul>
+                                <li ng-click="myordericon(3)" class="orderspan"><a>伊斯但布尔8日深度游，欧洲游</a></li>
+                                <li><span>出发日期&nbsp;:</span><span>&nbsp;2015年12月7日</span></li>
+                                <li><span>订单号:&nbsp;</span><span>&nbsp;600801539</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="myorder-2-3">
+                            <span class="myorder-2-3-1">北京出发</span>
+                            <br>
+                            <span class="myorder-2-3-2">￥15688</span>
+                        </div>
+
+                        <div class="myorder-2-4" ng-show="myorderi.show_3">
+                            <p>
+                                <a href="#"><span>无需面试</span></a>
+                                <a href="#"><span>无需面试</span></a>
+                                <a href="#"><span>无需面试</span></a>
+                                <a href="#"><span>无需面试</span></a>
+                            </p>
+                            <p><a href="#"><span>无需面试</span></a>
+                                <a href="#"><span>无需面试</span></a></p>
+
+                        </div>
+
+                        <div class="myorder-2-5">
+                            <a href="#" ng-click="myordericon(3)">
+                                <i class="ion-ios-arrow-down changeicon"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </li>
+                <li>
+                    <div class="myorder-3"  ng-click="myorli(0)">
+                        <span><a href="#">查看更多>></a></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </ion-content>
+
+</ion-view>
+
+

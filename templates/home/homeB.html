@@ -1,0 +1,143 @@
+<ion-view view-title="旅游用品" hide-tabs>
+    <div class="bar bar-header">
+        <a href="#tab/home" class="button button-icon icon ion-ios-arrow-left homeABC"></a>
+        <h1 class="title">旅游门票</h1>
+        <a href="#" class="button button-icon icon ion-ios-search-strong homeABC"></a>
+    </div>
+
+    <ion-content class="has-header homeB" delegate-handle="head">
+        <div>
+            <div class="menpiao">
+                <a class="menpiaoa" href="#tab/homeBb">
+                    <img src="img/piaowu.jpg">
+                    <p>龙熙温泉假日酒店</p>
+                    <span class="menpiaospan">城市  ：
+                        <span>北京</span>
+                    </span>
+                    <span class="menpiaozi">
+                        <span>￥688</span>起
+                    </span>
+                </a>
+                <a class="menpiaoa">
+                    <img src="img/piaowu.jpg">
+                    <p>龙熙温泉假日酒店</p>
+                    <span class="menpiaospan">城市  ：
+                        <span>北京</span>
+                    </span>
+                    <span class="menpiaozi">
+                        <span>￥688</span>起
+                    </span>
+                </a>
+                <a class="menpiaoa">
+                    <img src="img/piaowu.jpg">
+                    <p>龙熙温泉假日酒店</p>
+                    <span class="menpiaospan">城市  ：
+                        <span>北京</span>
+                    </span>
+                    <span class="menpiaozi">
+                        <span>￥688</span>起
+                    </span>
+                </a>
+                <a class="menpiaoa">
+                    <img src="img/piaowu.jpg">
+                    <p>龙熙温泉假日酒店</p>
+                    <span class="menpiaospan">城市  ：
+                        <span>北京</span>
+                    </span>
+                    <span class="menpiaozi">
+                        <span>￥688</span>起
+                    </span>
+                </a>
+                <a class="menpiaoa">
+                    <img src="img/piaowu.jpg">
+                    <p>龙熙温泉假日酒店</p>
+                    <span class="menpiaospan">城市  ：
+                        <span>北京</span>
+                    </span>
+                    <span class="menpiaozi">
+                        <span>￥688</span>起
+                    </span>
+                </a>
+                <a class="menpiaoa">
+                    <img src="img/piaowu.jpg">
+                    <p>龙熙温泉假日酒店</p>
+                    <span class="menpiaospan">城市  ：
+                        <span>北京</span>
+                    </span>
+                    <span class="menpiaozi">
+                        <span>￥688</span>起
+                    </span>
+                </a>
+
+            </div>
+
+        </div>
+        <script id="ticketPrice.html" type="text/ng-template">
+            <ion-modal-view class="modal1 slide-in-up ng-enter active ng-enter-active">
+                <ion-header-bar class="bar-positive">
+                    <a class="button" ng-click="closeModal()">取消</a>
+                    <h1 class="title">清空筛选</h1>
+                    <a class="button" ng-click="removeModal()">确定</a>
+                </ion-header-bar>
+                <ion-content>
+                <div class="row yongpin">
+                    <div class="col col-25">
+                        <ion-scroll direction="y" scrollbar-y="false">
+                            <ul class="list">
+                                <li class="item clicked homelizuo" type="card" >价格区间</li>
+                            </ul>
+                        </ion-scroll>
+                    </div>
+                    <div class="col col-75">
+                        <ion-scroll direction="y" class="homeliyou">
+                            <div class="list">
+                                <label class="item item-radio ng-valid" ng-repeat="i in items" ng-click="doSelect(this)">
+                                    <input type="radio" name="group" value="go">
+                                    <div class="radio-content">
+                                        <div class="item-content">
+                                            <p>
+                                            {{i}}
+                                            </p>
+                                        </div>
+                                        <i class="radio-icon ion-android-radio-button-on"></i>
+                                    </div>
+
+                                </label>
+                            </div>
+                        </ion-scroll>
+
+                    </div>
+                </div>
+                </ion-content>
+
+            </ion-modal-view>
+        </script>
+        <script id="ticketType.html" type="text/ng-template">
+            <ion-modal-view class="modal1 slide-in-up ng-enter active ng-enter-active">
+                <ion-content>
+                    <ul class="list setOrder">
+                        <li class="item clicked" type="card" >不限</li>
+                        <li class="item"  type="card">箱包</li>
+                        <li class="item"  type="card">polo系列</li>
+                        <li class="item"  type="card">UGG系列</li>
+                        <li class="item"  type="card">爱慕沙系列</li>
+                    </ul>
+                </ion-content>
+            </ion-modal-view>
+        </script>
+    </ion-content>
+
+    <div class="bar bar-footer bar-dark homeAdi">
+        <div class="di"ng-controller="homeBController" ng-click="priceOrder()">
+            <i  class="ion-stats-bars" ></i>
+            价格排序
+        </div>
+        <div class="di" ng-controller="ticketController" ng-click="ticketType()">
+            <i  class="ion-android-share-alt" ></i>
+            票务类型
+        </div>
+    </div>
+
+</ion-view>
+
+

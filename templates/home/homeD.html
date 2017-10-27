@@ -1,0 +1,222 @@
+<ion-view view-title="搜索结果">
+<div class="bar bar-subheader" id="soutou1">
+    <div class="bar bar-header">
+        <a href="#tab/home" class="button-icon icon ion-ios-arrow-left"style="color: #15a6fd"></a>
+        <a  href="#tab/homeS" class="item-input-wrapper .calm-bg homeDtou" style="margin-top: 0px">
+                <input type="text" placeholder="豪礼相送"disabled="disabled">
+                <i class="icon ion-ios-search placeholder-icon icon-calm" id="xian"></i>
+        </a>
+        <a href="" class="soua"><span>北京</span><i class="ion-chevron-down"></i></a>
+    </div>
+
+</div>
+
+<div class="bar-subheader" id="homeDbar">
+
+    <ion-scroll direction="x" scrollbar-x="false" >
+        <div class="button-bar sub_header_list" id="sub_header_list">
+            <a class="button button-clear sub_button_select" ng-click="changehomeD(0)">全部</a>
+            <a class="button button-clear" ng-click="changehomeD(1)">出境跟团游</a>
+            <a class="button button-clear" ng-click="changehomeD(2)">出境自由行</a>
+            <a href="#tab/gongsijieshao" class="button button-clear" ng-click="changehomeD(3)">豪华游轮</a>
+            <a class="button button-clear"></a>
+        </div>
+    </ion-scroll>
+    <div class="shaixuanxia" ng-click="ewm1()"><i class="ion-chevron-up"></i></div>
+    <div class="shaixuanxang"  ng-show="menuState1.show" style="z-index: 9999;position: relative">
+        <div>
+            <span>旅游签证(11)</span><span>旅游签证(12)</span><span>旅游签证(13)</span><span>旅游签证(14)</span><span>旅游签证(15)</span><span>旅游签证(11)</span>
+        </div>
+    </div>
+</div>
+<ion-content class="has-subheader homeA"  delegate-handle="head">
+    <div class="soulie">
+        <div class="soulie1">
+            <a href="#tab/homeD-a">
+                <div class="soulie1img" >
+                    <div class="soulie1img1" ><img src="img/biaoqian (2).png"></div>
+                    <img  class="soulie1img2"  src="img/sousuotu (1).jpg">
+                </div>
+                <div class="soulie1div">
+                    <p>伊斯坦布尔8日深度游转土耳其，全程风情特色5星酒店</p>
+
+                    <div><span class="imgxiao">优惠券</span><span class="imgxiao">优惠券</span></div>
+                    <p><span>北京出发</span><span class="souliespan3">起/人</span><span class="souliespan2">￥15688</span></p>
+                </div>
+            </a>
+        </div>
+
+        <div class="soulie1">
+            <a href="#tab/homeDe">
+                <div class="soulie1img" >
+                    <div class="soulie1img1" ><img src="img/biaoqian (3).png"></div>
+                    <img   class="soulie1img2"src="img/sousuotu (2).jpg">
+                </div>
+                <div class="soulie1div">
+                    <p>伊斯坦布尔8日深度游转土耳其，全程风情特色5星酒店</p>
+                    <div><img src="img/miaosha.png" class="imgda1">
+                        <span class="Dieer211">{{laveDay}}</span>
+                        <span class="Dieer212">{{laveHour}}</span>
+                        <span class="Dieer213">{{laveMinute}}</span>
+                        <span class="Dieer214">{{laveSecond}}</span></div>
+                    <p><span>北京出发</span><span class="souliespan3">起/人</span><span class="souliespan2">￥15688</span></p>
+                </div>
+            </a>
+        </div>
+        <div class="soulie1">
+            <div class="soulie1img" >
+                <div class="soulie1img1" ><img src="img/biaoqian (3).png"></div>
+                <img  class="soulie1img2" src="img/sousuotu (3).jpg">
+            </div>
+            <div class="soulie1div">
+                <p>伊斯坦布尔8日深度游转土耳其，全程风情特色5星酒店</p>
+                <div><img src="img/qian (3).png" class="imgda">
+                    <span class="Dieer215">2015</span>
+                    <span class="Dieer216">11</span>
+                    <span class="Dieer217">25</span>
+                </div>
+                <p><span>北京出发</span><span class="souliespan3">起/人</span><span class="souliespan2">￥15688</span></p>
+            </div>
+        </div>
+        <div class="soulie1">
+            <div class="soulie1img" >
+                <div class="soulie1img1" ><img src="img/biaoqian (1).png"></div>
+                <img  class="soulie1img2" src="img/sousuotu (4).jpg">
+            </div>
+            <div class="soulie1div">
+                <p>伊斯坦布尔8日深度游转土耳其，全程风情特色5星酒店</p>
+                <div><span class="imgxiao">优惠券</span><span class="imgxiao">优惠券</span></div>
+                <p><span>北京出发</span><span class="souliespan3">起/人</span><span class="souliespan2">￥15688</span></p>
+            </div>
+        </div>
+        <div class="soulie1">
+            <div class="soulie1img" >
+                <div class="soulie1img1" ><img src="img/biaoqian (2).png"></div>
+                <img  class="soulie1img2" src="img/sousuotu (1).jpg">
+            </div>
+            <div class="soulie1div">
+                <p>伊斯坦布尔8日深度游转土耳其，全程风情特色5星酒店</p>
+                <div><span class="imgxiao">优惠券</span><span class="imgxiao">优惠券</span></div>
+                <p><span>北京出发</span><span class="souliespan3">起/人</span><span class="souliespan2">￥15688</span></p>
+            </div>
+        </div>
+    </div>
+    <script id="login.html" type="text/ng-template">
+        <ion-modal-view class="modalD1 slide-in-up ng-enter active ng-enter-active">
+            <ion-header-bar class="bar-positive">
+                <a class="button" ng-click="closeModal()">取消</a>
+                <h1 class="title">清空筛选</h1>
+                <a class="button" ng-click="removeModal()">确定</a>
+            </ion-header-bar>
+            <ion-content style="height: 100%">
+                <div class="row area">
+                    <div class="col col-20">
+                        <ion-scroll direction="y" scrollbar-y="false">
+                            <ul class="list">
+                                <li class="item clicked homelizuo" type="card" ng-click="tab(0)" >全部</li>
+                                <li class="item homelizuo"  type="card" ng-click="tab(1)" >日本</li>
+                                <li class="item homelizuo"  type="card" ng-click="tab(2)" >韩国</li>
+                            </ul>
+                        </ion-scroll>
+                    </div>
+                    <div class="col col-80">
+                        <ion-scroll direction="y"  class="homeliyou">
+                            <div class="list">
+
+                                <label class="item item-radio ng-valid" ng-repeat="i in items" ng-value="'{{i}}'" ng-model="choice" value="{{i}}">
+                                    <input type="radio" name="radio-group" ng-value="'{{i}}'" ng-model="choice" value="{{i}}">
+                                    <div class="radio-content">
+                                        <div class="item-content">
+                                            <p>
+                                                {{i}}
+                                            </p>
+                                        </div>
+                                        <i class="radio-icon icon ion-android-radio-button-on"></i>
+                                    </div>
+                                </label>
+
+                            </div>
+                        </ion-scroll>
+                    </div>
+                </div>
+            </ion-content>
+
+        </ion-modal-view>
+    </script>
+    <script id="setOrder.html" type="text/ng-template">
+        <ion-modal-view class="modal1 slide-in-up ng-enter active ng-enter-active">
+            <ion-content style="height: 100%;background: #fff">
+                <ul class="list setOrder">
+                    <li class="item clicked" type="card" >关注度从高到低</li>
+                    <li class="item"  type="card">销量从高到低</li>
+                    <li class="item"  type="card">价格从高到低</li>
+                    <li class="item"  type="card">价格从低到高</li>
+                </ul>
+            </ion-content>
+        </ion-modal-view>
+    </script>
+    <script id="filter.html" type="text/ng-template">
+        <ion-modal-view class="modal1 slide-in-up ng-enter active ng-enter-active">
+            <ion-header-bar class="bar-positive">
+
+                <a class="button" ng-click="closeModal()">取消</a>
+                <h1 class="title">清空筛选</h1>
+                <a class="button" ng-click="removeModal()">确定</a>
+
+            </ion-header-bar>
+            <ion-content style="height: 100%">
+                <div class="row area">
+                    <div class="col col-25">
+                        <ion-scroll direction="y" scrollbar-y="false">
+                            <ul class="list Dul">
+                                <li class="item clicked" type="card" ng-click="tab(0)"  style="padding: 13px 5px">出发地</li>
+                                <li class="item"  type="card" ng-click="tab(1)"  style="padding: 13px 5px">行程天数</li>
+                                <li class="item"  type="card" ng-click="tab(2)"  style="padding: 13px 5px">价格区间</li>
+                                <li class="item"  type="card" ng-click="tab(3)"  style="padding: 13px 5px">优惠活动</li>
+                                <li class="item"  type="card" ng-click="tab(4)"  style="padding: 13px 5px">出发时间</li>
+                            </ul>
+                        </ion-scroll>
+                    </div>
+                    <div class="col col-75">
+                        <ion-scroll direction="y"  style="width:100%;height: 300px;background: #fff">
+                            <div class="list">
+                                <label class="item item-radio" ng-repeat="i in items">
+                                    <input type="radio" name="group" value="go">
+                                    <div class="radio-content">
+                                        <div class="item-content">
+                                            <p>
+                                                {{i}}
+                                            </p>
+                                        </div>
+
+                                        <i class="radio-icon ion-android-radio-button-on"></i>
+                                    </div>
+                                </label>
+
+                            </div>
+                        </ion-scroll>
+                    </div>
+                </div>
+            </ion-content>
+
+        </ion-modal-view>
+    </script>
+</ion-content>
+
+<div class="bar bar-footer bar-dark" style="padding: 0">
+    <div id="homeDdi" href="#" ng-click="showModal()">
+        <i class="ion-ios-location" ></i>
+        目的地
+    </div>
+    <div id="homeOrder" href="#" ng-controller="setOrderController" ng-click="setOrder()">
+        <i  class="ion-stats-bars"></i>
+        综合排序
+    </div>
+    <div id="homeFilter" href="#" ng-controller="filterController" ng-click="getFilter()">
+        <i class="ion-android-share-alt"></i>
+        筛选
+    </div>
+</div>
+</ion-view>
+
+

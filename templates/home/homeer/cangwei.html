@@ -1,0 +1,224 @@
+<ion-view view-title="舱位选择">
+    <div class="bar bar-header" id="soutou">
+        <ion-nav-bar>
+            <ion-nav-back-button class="button-icon ion-ios-arrow-left dingdan">
+                返回
+            </ion-nav-back-button>
+
+        </ion-nav-bar>
+    </div>
+
+    <ion-content class="has-header cangwei" delegate-handle="head">
+        <div class="cangwei-1">
+            <div class="cangwei-1-1">
+                <span class="cangwei-1-1-1">北京上船</span>
+                <br>
+                <span class="cangwei-1-1-2">12月24日</span>
+            </div>
+            <div class="cangwei-1-2">
+                <div class="cangwei-1-2-1">
+                    <span>大岛+可爱岛</span>
+                </div>
+
+                <div class="cangwei-1-2-2">
+                    <div class="cangwei-1-2-2-1"></div>
+                    <div class="cangwei-1-2-2-2"></div>
+                    <div class="cangwei-1-2-2-3"></div>
+                </div>
+
+                <div class="cangwei-1-2-3">
+                    <span>挪威·美国之傲号</span>
+                </div>
+            </div>
+            <div class="cangwei-1-3">
+                <span class="cangwei-1-1-3">北京下船</span>
+                <br>
+                <span class="cangwei-1-1-4">12月29日</span>
+            </div>
+        </div>
+        <div class="cangwei-2">
+            <ul>
+                <li ng-click="canchanback(0)" class="changecolor cankey">
+                    <div class="cangwei-2-1">
+                        <a href="">
+                        <span>内舱房</span>
+                        <br>
+                        <span>￥5688人/起</span>
+                        </a>
+                    </div>
+                    <div class="cangwei-2-2"  ng-show="cangwei.show_0"></div>
+                </li>
+                <li ng-click="canchanback(1)"  class="changecolor-1 cankey">
+                    <div class="cangwei-2-1">
+                        <span>海景房</span>
+                        <br>
+                        <span>￥9688人/起</span>
+                    </div>
+                    <div class="cangwei-2-2" ng-show="cangwei.show_1"></div>
+                </li>
+                <li ng-click="canchanback(2)" class="changecolor-1 cankey">
+                    <div class="cangwei-2-1">
+                        <span>海景双人房</span>
+                        <br>
+                        <span>￥5688人/起</span>
+                    </div>
+                    <div class="cangwei-2-2" ng-show="cangwei.show_2"></div>
+                </li>
+                <li ng-click="canchanback(3)" class="changecolor-1 cankey">
+                    <div class="cangwei-2-1">
+                        <span>海景阳台房</span>
+                        <br>
+                        <span>￥8688人/起</span>
+                    </div>
+                    <div class="cangwei-2-2" ng-show="cangwei.show_3"></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cangwei-3">
+            <div class="cangwei-3-1">
+                <div class="cangwei-3-2">
+                    <h5>特价内舱双人房F2</h5>
+                    <span class="cangwei-3-2-1">甲板10-12层，可入住1-2人</span><span class="cangwei-3-2-2">(剩余9间)</span>
+                    <br>
+                    <a ng-click="showDetail()">查看详情 &nbsp;<i class="ion-ios-arrow-right"></i><i class="ion-ios-arrow-right"></i></a>
+                </div>
+
+                <div class="cangwei-3-3">
+                    <div class="cangwei-3-4">
+                        <span class="cangwei-3-4-1">￥16888</span><span class="cangwei-3-4-2">人/起</span>
+                    </div>
+                    <div class="date-5-2-3">
+                        <div ng-click="subnumdata(0)" class="selserver-4-3-1"><span>-</span></div>
+                        <div class="selserver-4-3-2 cangweiaddsub">0</div>
+                        <div ng-click="addnumdata(0)" class="selserver-4-3-3"><span>+</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cangwei-3-1">
+                <div class="cangwei-3-2">
+                    <h5>特价内舱双人房F2</h5>
+                    <span class="cangwei-3-2-1">甲板10-12层，可入住1-2人</span><span class="cangwei-3-2-2">(剩余9间)</span>
+                    <br>
+                    <a>查看详情 &nbsp;<i class="ion-ios-arrow-right"></i><i class="ion-ios-arrow-right"></i></a>
+                </div>
+
+                <div class="cangwei-3-3">
+                    <div class="cangwei-3-4">
+                        <span class="cangwei-3-4-1">￥16888</span><span class="cangwei-3-4-2">人/起</span>
+                    </div>
+                    <div class="date-5-2-3">
+                        <div ng-click="subnumdata(1)" class="selserver-4-3-1"><span>-</span></div>
+                        <div class="selserver-4-3-2 cangweiaddsub">0</div>
+                        <div ng-click="addnumdata(1)" class="selserver-4-3-3"><span>+</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cangwei-3-1">
+                <div class="cangwei-3-2">
+                    <h5>特价内舱双人房F2</h5>
+                    <span class="cangwei-3-2-1">甲板10-12层，可入住1-2人</span><span class="cangwei-3-2-2">(剩余9间)</span>
+                    <br>
+                    <a >查看详情 &nbsp;<i class="ion-ios-arrow-right"></i><i class="ion-ios-arrow-right"></i></a>
+                </div>
+
+                <div class="cangwei-3-3">
+                    <div class="cangwei-3-4">
+                        <span class="cangwei-3-4-1">￥16888</span><span class="cangwei-3-4-2">人/起</span>
+                    </div>
+                    <div class="date-5-2-3">
+                        <div ng-click="subnumdata(2)" class="selserver-4-3-1"><span>-</span></div>
+                        <div class="selserver-4-3-2 cangweiaddsub">0</div>
+                        <div ng-click="addnumdata(2)" class="selserver-4-3-3"><span>+</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cangwei-4">
+            <div class="cangwei-4-1">
+                <i class="ion-ios-pricetags"></i><span>附加产品选择</span>
+            </div>
+            <div class="cangwei-3">
+                <div class="cangwei-3-1">
+                    <div class="cangwei-3-2">
+                        <h5>签证费</h5>
+                        <span class="cangwei-3-2-1">越南落地签证费</span>
+                        <br>
+                        <span class="cangwei-3-2-1">是否必须 ：</span>
+                        <a>否</a>
+                    </div>
+
+                    <div class="cangwei-3-3">
+                        <div class="cangwei-3-4">
+                            <span class="cangwei-3-4-1">￥16888</span><span class="cangwei-3-4-2">人/起</span>
+                        </div>
+                        <div class="date-5-2-3">
+                            <div ng-click="subnumdata(3)" class="selserver-4-3-1"><span>-</span></div>
+                            <div class="selserver-4-3-2 cangweiaddsub">0</div>
+                            <div ng-click="addnumdata(3)" class="selserver-4-3-3"><span>+</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script id="detail.html" type="text/ng-template">
+            <ion-modal-view class="modalcw slide-in-up ng-enter active ng-enter-active">
+                <ion-content class="cangweicontent">
+                    <div class="list">
+                        <div class="item bar bar-header">
+                            <h3 class="title cangweih3">标准内仓2人房</h3>
+                            <a class="button button-icon icon ion-close-circled icon-right" ng-click="closeDetail()"></a>
+                        </div>
+                        <div class="item">
+                            <img src="img/youluntu (3).jpg" style="width:100%">
+                        </div>
+                        <div class="item" style="padding: 0">
+                            <ul class="room">
+                                <li>
+                                    <span>面积</span>
+                                    <span>14m<sup>2</sup></span>
+                                </li>
+                                <li>
+                                    <span>入住人数</span>
+                                    <span> 2</span>
+                                </li>
+                                <li>
+                                    <span>楼层</span>
+                                    <span> 1-2层</span>
+                                </li>
+                                <li style="border: none">
+                                    <span>窗型</span>
+                                    <span>无窗</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item" style="text-overflow: inherit; white-space: inherit;">
+                            The List is a common and simple way of displaying... that's right, a list. This is a widely used interface across most current mobile OS's, and can include content ranging from basic text all the way to buttons, toggles, icons, and thumbnails.
+                            The list view is a very versatile and powerful component.
+                        </div>
+                        <div class="item bar bar-footer button button-dark button-full" ng-click="closeDetail()">
+                            关闭详情
+                        </div>
+                    </div>
+                </ion-content>
+            </ion-modal-view>
+        </script>
+    </ion-content>
+
+    <div class="bar bar-footer bar-dark" style="padding: 0">
+        <div class="button button-icon orderdi" ng-click="ewm()">
+            <span class="dizi">
+                订单总价 ：
+
+                </span>
+            <span class="dizi1">￥16680</span>
+        </div>
+        <div class="button button-icon icon orderdi2" ng-click="ewm()">
+            <span class="orderdi2-1">下一步</span>
+        </div>
+    </div>
+</ion-view>
+
+

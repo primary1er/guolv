@@ -1,0 +1,56 @@
+<ion-view view-title="我的积分">
+    <div class="bar bar-header" style="border-bottom: 1px solid #e2e2e2">
+        <ion-nav-bar>
+            <ion-nav-back-button class="button-icon ion-ios-arrow-left dingdan">
+                返回
+            </ion-nav-back-button>
+        </ion-nav-bar>
+    </div>
+    <ion-content class="has-header" style="background: #f3f4f8;bottom: 0px" delegate-handle="head">
+        <div class="jifenzi">
+            <p>
+                您的可用积分中有 <span>65560</span> 即将过期，请尽快使用！
+            </p>
+        </div>
+        <div class="jifenzia">
+            <ul>
+                <li>可使用积分</br>205560</li>
+                <li style="border-left: 1px solid #fff;border-right:1px solid #fff ">已使用积分</br>205560</li>
+                <li>已失效积分</br>205560</li>
+            </ul>
+        </div>
+        <div class="wodeyouhuiquan" style="border-top:1px solid #e2e2e2 ">
+            <ul>
+                <li class="selecli crechancolor" ng-click="cruchange(0)"><a class="wodeyouhuiquan1 wodeyouhuiquan2">可使用积分</a></li>
+                <li class="selecli"ng-click="cruchange(1)"><a class="wodeyouhuiquan1" >未使用积分</a></li>
+                <li class="selecli" ng-click="cruchange(2)"><a class="wodeyouhuiquan1" >已过期积分</a></li>
+            </ul>
+        </div>
+        <div ng-show="cruise.show_0">
+            <div class="wodeyouhuiquandiv-jifen">
+                <p class="wodeyouhuiquandiv-jifen-p">积分来源 ：满意调查卷</span></p></li>
+                <p class="wodeyouhuiquandiv-jifen-p1"><i class="ion-ios-stopwatch-outline"></i><span>过期时期 ：2016-12-12</span></p>
+                <p class="wodeyouhuiquandiv-jifen-p2"><i class="ion-ios-copy-outline"></i><span class="wodeyouhuiquandiv-jifen-p2-span">积分值 ：<span>65560</span></span></p>
+            </div>
+            <div class="wodeyouhuiquandiv-jifen">
+                <p class="wodeyouhuiquandiv-jifen-p">积分来源 ：满意调查卷</span></p></li>
+                <p class="wodeyouhuiquandiv-jifen-p1"><i class="ion-ios-stopwatch-outline"></i><span>过期时期 ：2016-12-12</span></p>
+                <p class="wodeyouhuiquandiv-jifen-p2"><i class="ion-ios-copy-outline"></i><span class="wodeyouhuiquandiv-jifen-p2-span">积分值 ：<span>65560</span></span></p>
+            </div>
+            <div class="wodeyouhuiquandiv-jifen">
+                <p class="wodeyouhuiquandiv-jifen-p">积分来源 ：满意调查卷</span></p></li>
+                <p class="wodeyouhuiquandiv-jifen-p1"><i class="ion-ios-stopwatch-outline"></i><span>过期时期 ：2016-12-12</span></p>
+                <p class="wodeyouhuiquandiv-jifen-p2"><i class="ion-ios-copy-outline"></i><span class="wodeyouhuiquandiv-jifen-p2-span">积分值 ：<span>65560</span></span></p>
+            </div>
+
+        </div>
+        <div ng-show="cruise.show_1" class="cruise-3">
+        </div>
+        <div ng-show="cruise.show_2" class="cruise-3">
+
+
+        </div>
+    </ion-content>
+
+
+</ion-view>

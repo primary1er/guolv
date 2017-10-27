@@ -1,0 +1,53 @@
+
+<ion-view view-title="搜索结果">
+    <div class="bar bar-subheader" id="soutou1">
+        <div class="bar bar-header">
+            <a href="#atb/home" class="button-icon icon ion-ios-arrow-left"style="color: #15a6fd"></a>
+            <label class="item-input-wrapper .calm-bg" style="margin-top: 0px">
+                <input type="text" placeholder="豪礼相送">
+                <i class="icon ion-ios-search placeholder-icon icon-calm" id="xian"></i>
+            </label>
+            <a href="" class="soua"><span>北京</span><i class="ion-chevron-down"></i></a>
+        </div>
+
+    </div>
+
+    <div class="bar-subheader" id="homeDbar">
+        <ion-scroll direction="x" scrollbar-x="false" >
+            <div class="button-bar sub_header_list" id="sub_header_list">
+                <a class="button button-clear sub_button_select" ng-click="changeTab(15,0)">全部</a>
+                <a class="button button-clear" ng-click="changeTab(1,1)">出境跟团游</a>
+                <a class="button button-clear" ng-click="changeTab(27,2)">出境自由行</a>
+                <a class="button button-clear" ng-click="changeTab(15,3)">豪华游轮</a>
+            </div>
+        </ion-scroll>
+        <div class="shaixuanxia" ng-click="ewm1()"><i class="ion-chevron-up"></i></div>
+        <div class="shaixuanxang"  ng-show="menuState1.show" style="z-index: 9999;position: relative">
+            <div>
+                <img src="img/shaixuan (1).png"><img src="img/shaixuan (2).png"><img src="img/shaixuan (3).png"><br/>
+                <img src="img/shaixuan (4).png"><img src="img/shaixuan (5).png">
+            </div>
+        </div>
+    </div>
+
+    <ion-content class="has-subheader"  delegate-handle="head">
+        <div>
+            <i class="ion-ios-information-outline"></i>
+
+        </div>
+    </ion-content>
+
+    <div class="bar bar-footer bar-dark" style="padding: 0">
+        <a id="homeDdi" href="#" class="button button-icon ion-ios-location-outline" ng-click="showModal()">
+            目的地
+        </a>
+        <a id="homeOrder" href="#" ng-controller="setOrderController" class="button button-icon ion-stats-bars" ng-click="setOrder()">
+            综合排序
+        </a>
+        <a id="homeFilter" href="#" ng-controller="filterController" class="button button-icon icon ion-android-share-alt" ng-click="getFilter()">
+            筛选
+        </a>
+    </div>
+</ion-view>
+
+

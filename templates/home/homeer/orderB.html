@@ -1,0 +1,97 @@
+
+<ion-view view-title="添加常用地址">
+    <div class="bar bar-header" id="soutou">
+        <div class="bar bar-header">
+            <a href="#atb/home" class="button-icon icon ion-ios-arrow-left"style="color: #15a6fd"></a>
+            <h4 style="margin: auto">添加常用地址</h4>
+        </div>
+    </div>
+
+    <ion-content class="has-header order" delegate-handle="head">
+        <div class="orderB-1">
+            <ul>
+                <li><input style="border:0px;" value="请输入收件人姓名" class="orderB-2"/></li>
+                <li><input style="border:0px;" value="请输入手机号码" class="orderB-2"/></li>
+                <li><span class="orderB-3">选择所在省份</span><i class="ion-chevron-down" ng-click="showProvinces()"></i></li>
+                <li><span class="orderB-3">选择所在省份</span><i class="ion-chevron-down"></i></li>
+                <li><span class="orderB-3">选择所在省份</span><i class="ion-chevron-down"></i></li>
+                <li><input style="border:0px;" value="请输入详细地址" class="orderB-2"/></li>
+                <li><input style="border:0px;" value="请输入邮政编码" class="orderB-2"/></li>
+            </ul>
+
+        </div>
+        <script id="provinces.html" type="text/ng-template">
+            <ion-modal-view class="modaloB slide-in-up ng-enter active ng-enter-active">
+                <ion-content style="height: 100%">
+                    <ion-scroll direction="y"  style="width:100%;">
+                        <div class="list" style="margin: 0 15px">
+                            <label class="item item-radio">
+                                <div class="item-content item-divider">请选择</div>
+                            </label>
+                            <label class="item item-radio" ng-model="choice" ng-value="'B'" value="B">
+                                <input type="radio" name="radio-group" ng-value="'B'" ng-model="choice" value="B">
+                                <div class="radio-content">
+                                    <div class="item-content" >
+                                        <span>中国</span>
+                                    </div>
+                                    <i class="radio-icon icon ion-android-radio-button-on"></i>
+                                </div>
+                            </label>
+                            <label class="item item-radio" ng-model="choice" ng-value="'A'" value="A">
+                                <input type="radio" name="radio-group" ng-value="'C'" ng-model="choice"  value="C">
+                                <div class="radio-content">
+                                    <div class="item-content">
+                                        <span>北京</span>
+                                    </div>
+                                    <i class="radio-icon icon ion-android-radio-button-on"></i>
+                                </div>
+                            </label>
+                            <label class="item item-radio ng-valid" ng-model="choice" ng-value="'B'" value="B">
+                                <input type="radio" name="radio-group" ng-value="'D'" ng-model="choice" value="D">
+                                <div class="radio-content">
+                                    <div class="item-content" >
+                                        <span>上海</span>
+                                    </div>
+                                    <i class="radio-icon icon ion-android-radio-button-on"></i>
+                                </div>
+                            </label>
+                            <label class="item item-radio ng-valid" ng-model="choice" ng-value="'E'" value="E">
+                                <input type="radio" name="radio-group" ng-value="'F'" ng-model="choice" value="F">
+                                <div class="radio-content">
+                                    <div class="item-content" >
+                                        <span>天津</span>
+                                    </div>
+                                    <i class="radio-icon icon ion-android-radio-button-on"></i>
+                                </div>
+                            </label>
+                            <label class="item item-radio ng-valid" ng-model="choice" ng-value="'G'" value="G">
+                                <input type="radio" name="radio-group" ng-value="'H'" ng-model="choice" value="H">
+                                <div class="radio-content">
+                                    <div class="item-content" >
+                                        <span>重庆</span>
+                                    </div>
+                                    <i class="radio-icon icon ion-android-radio-button-on"></i>
+                                </div>
+                            </label>
+                            <div class="bar bar-footer item" style="padding: 0px;border: 0">
+                                <button class="button button-clear"style="width: 50%;padding: 5px 0;border-right:1px solid #e2e2e2 " ng-click="closeModal()">取消</button>
+                                <button class="button button-clear button-calm"style="width: 50%">确认</button>
+                            </div>
+                        </div>
+                    </ion-scroll>
+                </ion-content>
+            </ion-modal-view>
+        </script>
+
+    </ion-content>
+    <div class="bar bar-footer bar-dark" style="padding: 0">
+        <a id="siren" href="#">
+            取消
+        </a>
+        <a id="siren1" href="#">
+            保存
+        </a>
+    </div>
+</ion-view>
+
+

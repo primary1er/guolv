@@ -1,0 +1,66 @@
+<ion-view view-title="订单支付成功" >
+    <div class="bar bar-header" id="soutou">
+        <ion-nav-bar>
+            <ion-nav-back-button class="button-icon ion-ios-arrow-left dingdan">
+                返回
+            </ion-nav-back-button>
+        </ion-nav-bar>
+    </div>
+
+    <ion-content class="ordersuc">
+        <div class="ordersuc-1">
+            <img src="img/ordersuc.png"/>
+            <br>
+            <span class="ordersuc-1span1">恭喜您</span><span class="ordersuc-1span2">，订单支付成功</span>
+        </div>
+
+        <div class="ordersuc-2">
+            <ul>
+                <li>
+                    <span class="ordersuc-2span1">订单编号：</span>
+                    <span class="ordersuc-2span2">032489-1237</span>
+                </li>
+
+                <li>
+                    <span class="ordersuc-2span1">服务热线：</span>
+                    <span class="ordersuc-2span2">400-60-888(服务时间:早8点-晚9点)</span>
+                </li>
+
+                <li>
+                    <span class="ordersuc-2span1">订单总价：</span>
+                    <span class="ordersuc-2span3">￥16888</span>
+                </li>
+
+                <li>
+                    <span class="ordersuc-2span1">网上预订价：</span>
+                    <span class="ordersuc-2span3">￥15888</span>
+                    <span class="ordersuc-2span4">网上预订立省105.5元</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="ordersuc-3"></div>
+
+        <div class="ordersuc-4">
+            <ul>
+                <li><span class="ordersuc-4-span3">选择支付方式</span></li>
+                <li><img class="ordersuc-4-img1" src="img/ylpay.png"/><span class="ordersuc-4-span1">手机网银支付</span><input type="radio" name="pay" checked></li>
+                <li><img class="ordersuc-4-img2" src="img/alipay.png"/><span class="ordersuc-4-span2">支付宝支付</span><input type="radio" name="pay"></li>
+                <li><img class="ordersuc-4-img2" src="img/wxpay.png"/><span class="ordersuc-4-span2">手机微信支付</span><input type="radio" name="pay"></li>
+                <li><img class="ordersuc-4-img2" src="img/jfpay.png"/><span class="ordersuc-4-span2">积分支付</span><input type="radio" name="pay"></li>
+            </ul>
+        </div>
+    </ion-content>
+
+    <div class="ordersucdi">
+        <div class="ordersucdi-1" ng-click="ordersucancenl()">
+            <span>取消</span>
+        </div>
+
+        <div class="ordersucdi-2">
+            <a href="">下一步</a>
+        </div>
+    </div>
+</ion-view>
+
+

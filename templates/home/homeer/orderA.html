@@ -1,0 +1,131 @@
+
+<ion-view view-title="添加常用旅客">
+    <ion-nav-bar>
+        <ion-nav-back-button class="button-icon ion-ios-arrow-left dingdan">
+            返回
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content class="has-header order" delegate-handle="head">
+        <div class="orderA-1">
+            <ul>
+                <li><span>姓名</span><input style="border:0px;" value="季刚" class="orderA-2"/></li>
+                <li><span>手机</span><input style="border:0px;" value="123456789" class="orderA-2"/></li>
+                <li><span>生日</span><input style="border:0px;" value="12-04" class="orderA-2"/></li>
+                <li>
+                    <span>性别</span>
+                    <span class="orderA-2">男</span>
+                    <input id="orderAinput" type="radio" checked name="orde"/>
+                    <span class="orderA-2">女</span>
+                    <input id="orderAinput" type="radio"  name="orde"/>
+                </li>
+                <li>
+                    <span>类型</span>
+                    <span class="orderA-2">成人</span>
+                    <input id="orderAinput1"type="radio" name="or" checked/>
+                    <span class="orderA-2">儿童</span>
+                    <input id="orderAinput2" type="radio" name="or"/>
+                </li>
+                <div class="zhengjian">
+                    <div class="zhengjiandiv">
+                        <i class="ion-ios-close-outline" id="zhengjiandivi"></i>
+                        <p id="zhengjiandivp" ng-click="showCards()">
+                            <span>证件类型</span>
+                            <i id="zhengjiandivpi" class="ion-chevron-down"></i>
+                            <span class="zhengjiandivpspan">护照</span>
+                        </p>
+                        <p id="zhengjiandivp">
+                            <span>证件号码</span>
+                            <input style="border:0px;" value="123456789987741" class="zhengjiandivpspan"/></p>
+                        <p><span>证件有效期</span><input style="border:0px;" value="2016/09/01" class="zhengjiandivpspan"/></p>
+                    </div>
+                    <div class="zhengjiandiv">
+                        <i class="ion-ios-close-outline" id="zhengjiandivi1"></i>
+                        <p id="zhengjiandivp">
+                            <span >证件类型</span>
+                            <i id="zhengjiandivpi" class="ion-chevron-down"></i><span class="zhengjiandivpspan">身份证</span></p>
+                        <p><span>证件号码</span<input style="border:0px;" value="123456789987741" class="zhengjiandivpspan"/></p>
+                    </div>
+                </div>
+                <li id="xinzeng">
+                    <span>新增证件</span>
+                    <i class="ion-ios-plus-outline"></i>
+                </li>
+            </ul>
+        </div>
+        <script id="cardsType.html" type="text/ng-template">
+            <ion-modal-view class="modaloA slide-in-up ng-enter active ng-enter-active">
+                <ion-content>
+                    <div class="list">
+                        <label class="item item-radio">
+                            <div class="radio-content">
+                                <div class="item-content">
+                                    <span>请选择</span>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="item item-radio ng-valid" ng-model="choice" ng-value="'B'" value="B">
+                            <input type="radio" name="radio-group" ng-value="'B'" ng-model="choice" value="B">
+                            <div class="radio-content">
+                                <div class="item-content" >
+                                    <span>身份证</span>
+                                </div>
+                                <i class="radio-icon icon ion-android-radio-button-on"></i>
+                            </div>
+                        </label>
+                        <label class="item item-radio" ng-model="choice" ng-value="'A'" value="A">
+                            <input type="radio" name="radio-group" ng-value="'C'" ng-model="choice"  value="C">
+                            <div class="radio-content">
+                                <div class="item-content">
+                                    <span>护照</span>
+                                </div>
+                                <i class="radio-icon icon ion-android-radio-button-on"></i>
+                            </div>
+                        </label>
+                        <label class="item item-radio ng-valid" ng-model="choice" ng-value="'B'" value="B">
+                            <input type="radio" name="radio-group" ng-value="'D'" ng-model="choice" value="D">
+                            <div class="radio-content">
+                                <div class="item-content" >
+                                    <span>户口本</span>
+                                </div>
+                                <i class="radio-icon icon ion-android-radio-button-on"></i>
+                            </div>
+                        </label>
+                        <label class="item item-radio ng-valid" ng-model="choice" ng-value="'B'" value="B">
+                            <input type="radio" name="radio-group" ng-value="E" ng-model="choice" value="D">
+                            <div class="radio-content">
+                                <div class="item-content" >
+                                    <span>学生证</span>
+                                </div>
+                                <i class="radio-icon icon ion-android-radio-button-on"></i>
+                            </div>
+                        </label>
+                        <label class="item item-radio ng-valid" ng-model="choice" ng-value="'B'" value="B">
+                            <input type="radio" name="radio-group" ng-value="'F'" ng-model="choice" value="D">
+                            <div class="radio-content">
+                                <div class="item-content" >
+                                    <span>军人证</span>
+                                </div>
+                                <i class="radio-icon icon ion-android-radio-button-on"></i>
+                            </div>
+                        </label>
+
+                    </div>
+                    <div class="bar bar-footer item" style="padding: 0px;border: 0">
+                        <button class="button button-clear" style="width: 50%;padding: 5px 0;border-right:1px solid #e2e2e2 " ng-click="closeModal()">取消</button>
+                        <button class="button button-clear button-calm" style="width: 50%" ng-click="okAdd()">确认</button>
+                    </div>
+                </ion-content>
+            </ion-modal-view>
+        </script>
+    </ion-content>
+    <div class="bar bar-footer bar-dark" style="padding: 0">
+        <a id="siren" href="#">
+            取消
+        </a>
+        <a id="siren1" href="#">
+            保存
+        </a>
+    </div>
+</ion-view>
+
+

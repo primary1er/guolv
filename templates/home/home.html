@@ -1,0 +1,272 @@
+<ion-view view-title="首页">
+<div class="bar bar-subheader" ng-class="{'bar-subheader-bg':bg}">
+    <div class="bar bar-header">
+        <div class="item-input-wrapper .calm-bg">
+            <a href="#tab/home-zhandian" class="a1"><span>北京</span><i class="ion-chevron-down"></i></a>
+            <a href="#tab/homeS" class="a2"><i class="ion-ios-search placeholder-icon icon-calm"></i></a>
+            <a href="#tab/homeS"><input type="text" placeholder="年终大促豪礼相送"disabled="disabled"></a>
+        </div>
+        <a href="tel:123"><img src="img/telicon.png"></a>
+    </div>
+</div>
+<ion-content delegate-handle="head">
+
+<!--轮播图-->
+<ion-slide-box class="silde-img" does-continue="true" auto-play="true" slide-interval="2000">
+    <ion-slide>
+        <img src="img/lb.jpg"/>
+    </ion-slide>
+    <ion-slide>
+        <img src="img/lb.jpg"/>
+    </ion-slide>
+    <ion-slide>
+        <img src="img/lb.jpg"/>
+    </ion-slide>
+</ion-slide-box>
+
+<!--模块-->
+<div class="mokuai">
+    <div class="row row-h-1">
+        <div class="col col-25" ng-click="ewm(1)">
+            <div class="tu">
+                <img src="img/1.png" id="aa">
+                <p>出境游</p>
+            </div>
+        </div>
+        <div class="col col-25" ng-click="ewm(2)">
+            <div class="tu">
+                <img src="img/2.png">
+                <p>国内游</p>
+            </div>
+        </div>
+        <div class="col col-25" ng-click="ewm(3)">
+            <div class="tu">
+                <img src="img/3.png">
+                <p>票务</p>
+            </div>
+        </div>
+        <div class="col col-25">
+            <a href="#tab/siren"><div class="tu">
+                <img src="img/4.png">
+                <p>私人定制</p>
+            </div></a>
+        </div>
+    </div>
+    <div ng-show="menuState.show_1">
+        <div class="mokuaidiv"><img src="img/san.png"></div>
+        <ul class="ul">
+            <a href="#tab/homeD"><li>出境游</li></a>
+            <a href="#tab/order"><li>填写订单</li></a>
+            <a href="#tab/myorder"><li>我的订单</li></a>
+            <a href="#tab/selecservice"><li>服务选择</li></a>
+            <a href="#tab/flight"><li>航班</li></a>
+            <a href="#tab/jiudian"><li>酒店</li></a>
+            <a href="#tab/date"><li>日期</li></a>
+            <a href="#tab/vip"><li>会员中心</li></a>
+            <a href="#tab/siren"><li>私人定制</li></a>
+            <a href="#tab/cangwei"><li>舱位</li></a>
+            <a href="#tab/home-youhui"><li>优惠</li></a>
+            <li style="color: #15a6fd">更多</li>
+
+        </ul>
+    </div>
+    <div ng-show="menuState.show_2">
+        <div class="mokuaidiv2"><img src="img/san.png"></div>
+        <ul class="ul">
+            <a href="#tab/homeD"><li>国内游</li></a>
+            <a href="#tab/gouwushuoming"><li>购物说明</li></a>
+            <a href="#tab/zengjiachangyong"><li>添加常客</li></a>
+            <a href="#tab/lianxiang"><li>联想</li></a>
+            <a href="#tab/gongsijieshao"><li>公司介绍</li></a>
+            <a href="#tab/cruise"><li>邮轮介绍</li></a>
+            <li><a href="#tab/ordersuc">订单成功</a></li>
+            <li><a href="#tab/ordererr">订单失败</a></li>
+            <li><a href="#tab/vipann">会员公告</a></li>
+            <li><a href="#tab/mynotice">我的出团通知</a></li>
+            <li><a href="#tab/err">出错了</a></li>
+            <li><a href="#tab/err1">出错了1</a></li>
+            <li style="color: #15a6fd">更多</li>
+        </ul>
+    </div>
+    <div ng-show="menuState.show_3">
+        <div class="mokuaidiv3"><img src="img/san.png"></div>
+        <ul class="ul">
+            <li><a href="#tab/youhuiquanjihuo">优惠券激活</a></li>
+            <li><a href="#tab/xingqian">行前</a></li>
+            <li><a href="#tab/shoucang">收藏</a></li>
+            <a href="#tab/homeB"><li style="color:#15a6fd">更多</li></a>
+        </ul>
+    </div>
+
+    <div class="row row-h-2">
+        <div class="col col-25" ng-click="ewm(5)">
+            <div class="tu">
+                <img src="img/5.png">
+                <p>游轮</p>
+            </div>
+        </div>
+        <div class="col col-25" ng-click="ewm(6)">
+            <div class="tu">
+                <img src="img/6.png">
+                <p>签证</p>
+            </div>
+        </div>
+        <div class="col col-25" ng-click="ewm(7)">
+            <div class="tu">
+                <img src="img/7.png">
+                <p>周边游</p>
+            </div>
+        </div>
+        <div class="col col-25" ng-click="ewm(8)">
+            <div class="tu">
+                <img src="img/8.png">
+                <p>旅行用品</p>
+            </div>
+        </div>
+    </div>
+    <div ng-show="menuState.show_5" class="homexai">
+        <div class="mokuaidiv"><img src="img/san.png"></div>
+        <ul class="ul">
+            <li><a href="#tab/sirendingzhi">我的私人订制</a></li>
+            <li><a href="#tab/wodeyouhuiquan">我的优惠券</a></li>
+            <li><a href="#tab/jifen">我的积分</a></li>
+            <a href="#tab/homeD"><li style="color:#15a6fd">更多</li></a>
+        </ul>
+
+    </div>
+    <div ng-show="menuState.show_6" class="homexai1">
+        <div class="mokuaidiv2"><img src="img/san.png"></div>
+        <ul class="ul">
+            <li><a href="#tab/shichang">市场活动</a></li>
+            <li><a href="#tab/chaxunkong">查询为空</a></li>
+            <li><a href="#tab/denglu">登录</a></li>
+            <li><a href="#tab/vipreg">注册</a></li>
+            <li><a href="#tab/stage">爱旅行</a></li>
+            <li><a href="#tab/personalfile">个人资料</a></li>
+            <a href="#tab/homeC"><li  style="color: #15a6fd">更多</li></a>
+        </ul>
+
+    </div>
+    <div ng-show="menuState.show_7" class="homexai1">
+        <div class="mokuaidiv3"><img src="img/san.png"></div>
+        <ul class="ul">
+            <li><a href="#tab/dingdanxiangqing">订单详情</a></li>
+            <li><a href="#tab/xiugai">修改联系人</a></li>
+            <li>河北</li>
+            <li>盘山</li>
+            <li>平遥</li>
+            <li>承德</li>
+            <li>忻州</li>
+            <li style="color: #15a6fd">更多</li>
+        </ul>
+
+    </div>
+    <div ng-show="menuState.show_8" class="homexai">
+        <div class="mokuaidiv4"><img src="img/san.png"></div>
+        <ul class="ul">
+            <li>箱包</li>
+            <li>爱慕莎系列</li>
+            <li>电器</li>
+            <a href="#tab/homeA"><li style="color:#15a6fd">更多</li></a>
+        </ul>
+
+    </div>
+</div>
+
+<div class="kong"></div>
+<!--列表一-->
+<div class="lie1">
+    <div class="lie1div"><img src="img/bkzq.png"></div>
+    <div class="lie1div1"><img src="img/bkzqimg.png" class="img"></div>
+    <div class="liediv">
+        <a href="#"><img src="img/cxfw.jpg" class="divimg"></a>
+        <a href="#"><img src="img/alx.jpg" class="divimg"></a>
+        <a href="#"><img src="img/yiy.jpg"></a>
+    </div>
+</div>
+<div class="lie2">
+    <a href="#" class="lie2img"><img src="img/ggw1.jpg" ></a>
+    <a href="#" class="lie2img1"><img src="img/ggw2.jpg"></a>
+</div>
+<div class="re">
+    <div class="xian"></div>
+    <div class="tuzi">
+        <div><img src="img/tjicon.png"></div>
+        <span>热门推荐</span></div>
+</div>
+<!--列表二-->
+<div class="lieer">
+    <div class="lieer1"><img src="img/gtyicon.png"></div>
+    <div class="lieer2">
+        <img src="img/yhqicon.png">
+        <img src="img/mjicon.png">
+        <img src="img/ljicon.png">
+        <img src="img/mzicon.png">
+    </div>
+    <img src="img/cpimg.jpg" class="lieerimg">
+    <div class="lieer3">
+        <div class="lieer31"><p>法国瑞士意大利12日深度游，五星酒店，国航直飞。</p></div>
+        <div class="lieer32">
+            <p class="lieer32p">￥<span>15688</span>人/起</p>
+            <p class="lieer32p1">￥19988人/起</p>
+        </div>
+    </div>
+</div>
+<div class="lieer">
+    <div class="lieer1"><img src="img/zyxicon.png"></div>
+    <div class="lieer21">
+        <img src="img/msicon.png">
+        <p class="lieer211">{{laveDay}}</p>
+        <p class="lieer212">{{laveHour}}</p>
+        <p class="lieer213">{{laveMinute}}</p>
+        <p class="lieer214">{{laveSecond}}</p>
+    </div>
+    <img src="img/cpimg.jpg" class="lieerimg">
+    <div class="lieer3">
+        <div class="lieer31"><p>法国瑞士意大利12日深度游，五星酒店，国航直飞。</p></div>
+        <div class="lieer32">
+            <p class="lieer32p">￥<span>15688</span>人/起</p>
+            <p class="lieer32p1">￥19988人/起</p>
+        </div>
+    </div>
+</div>
+<div class="lieer">
+    <div class="lieer1"><img src="img/ylicon.png"></div>
+    <div class="lieer21">
+        <img src="img/ysicon.png">
+        <p class="lieer215">2015</p>
+        <p class="lieer216">11</p>
+        <p class="lieer217">25</p>
+    </div>
+    <img src="img/cpimg.jpg" class="lieerimg">
+    <div class="lieer3">
+        <div class="lieer31"><p>法国瑞士意大利12日深度游，五星酒店，国航直飞。</p></div>
+        <div class="lieer32">
+            <p class="lieer32p">￥<span>15688</span>人/起</p>
+            <p class="lieer32p1">￥19988人/起</p>
+        </div>
+    </div>
+</div>
+<div class="lieer">
+    <div class="lieer1"><img src="img/gtyicon.png"></div>
+    <div class="lieer2">
+        <img src="img/yhqicon.png">
+        <img src="img/mjicon.png">
+        <img src="img/ljicon.png">
+        <img src="img/mzicon.png">
+    </div>
+    <img src="img/cpimg.jpg" class="lieerimg">
+    <div class="lieer3">
+        <div class="lieer31"><p>法国瑞士意大利12日深度游，五星酒店，国航直飞。</p></div>
+        <div class="lieer32">
+            <p class="lieer32p">￥<span>15688</span>人/起</p>
+            <p class="lieer32p1">￥19988人/起</p>
+        </div>
+    </div>
+</div>
+<div class="dikong"></div>
+<div class="ditu">
+    <img src="img/ggw.jpg">
+</div>
+</ion-content>
+</ion-view>

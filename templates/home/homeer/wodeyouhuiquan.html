@@ -1,0 +1,56 @@
+<ion-view view-title="我的优惠券">
+    <div class="bar bar-header" style="border-bottom: 1px solid #e2e2e2">
+        <ion-nav-bar>
+            <ion-nav-back-button class="button-icon ion-ios-arrow-left dingdan">
+                返回
+            </ion-nav-back-button>
+        </ion-nav-bar>
+    </div>
+    <ion-content class="has-header" style="background: #f3f4f8;bottom: 44px" delegate-handle="head">
+        <div class="wodeyouhuiquan">
+            <ul>
+                <li class="selecli crechancolor" ng-click="cruchange(0)"><a class="wodeyouhuiquan1 wodeyouhuiquan2">可使用</a></li>
+                <li class="selecli"ng-click="cruchange(1)"><a class="wodeyouhuiquan1" >未使用</a></li>
+                <li class="selecli" ng-click="cruchange(2)"><a class="wodeyouhuiquan1" >已过期</a></li>
+            </ul>
+        </div>
+        <div ng-show="cruise.show_0">
+            <div class="wodeyouhuiquandiv">
+                <ul>
+                    <li>编号：<span>123A8A321</span></li>
+                    <li>面值：<span><span id="wodeyouhuiquandiv-span">600</span>元</span></li>
+                    <li>有效期：<span>2015年11月11日</span></li>
+                    <li>使用限制：<span>满一百可使用，限北京出发欧洲路线</span></li>
+                </ul>
+            </div>
+            <div class="wodeyouhuiquandiv">
+                <ul>
+                    <li>编号：<span>123A8A321</span></li>
+                    <li>面值：<span><span id="wodeyouhuiquandiv-span">600</span>元</span></li>
+                    <li>有效期：<span>2015年11月11日</span></li>
+                    <li>使用限制：<span>满一百可使用，限北京出发欧洲路线</span></li>
+                </ul>
+            </div>
+            <div class="wodeyouhuiquandiv">
+                <ul>
+                    <li>编号：<span>123A8A321</span></li>
+                    <li>面值：<span><span id="wodeyouhuiquandiv-span">600</span>元</span></li>
+                    <li>有效期：<span>2015年11月11日</span></li>
+                    <li>使用限制：<span>满一百可使用，限北京出发欧洲路线</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div ng-show="cruise.show_1" class="cruise-3">
+
+
+        </div>
+        <div ng-show="cruise.show_2" class="cruise-3">
+
+
+        </div>
+    </ion-content>
+    <div class="bar bar-footer bar-dark" style="padding: 0;">
+        <a class="jihuodi">优惠券激活</a>
+    </div>
+</ion-view>

@@ -1,0 +1,255 @@
+<ion-view view-title="填写订单" >
+    <div class="bar bar-header" id="soutou">
+            <ion-nav-bar>
+                <ion-nav-back-button class="button-icon ion-ios-arrow-left dingdan">
+                    返回
+                </ion-nav-back-button>
+            </ion-nav-bar>
+    </div>
+
+    <ion-content class="has-header order" delegate-handle="head">
+        <div class="order-1">
+            <ul>
+                <li class="">
+                    <div class="order-1-1 borigt">
+                        <span>出游人数</span>
+                        <br>
+                        <span>2成人1儿童</span>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="order-1-1 borigt">
+                        <span>行程天数</span>
+                        <br>
+                        <span>6天</span>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="order-1-1">
+                        <span>订单价格</span>
+                        <br>
+                        <span>￥16880</span>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="order-2">
+            <h5>北京往返</h5>
+            <div class="order-2-1">
+                <ul>
+                    <li>
+                        <span>1月7日</span><br>
+                        <span>星期四</span>
+                    </li>
+
+                    <li>
+                        <span>——</span>
+                    </li>
+
+                    <li>
+                        <span>1月12日</span><br>
+                        <span>星期二</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="order-2-2">
+                <h5>【包机直飞-巴厘岛】奢享套装5晚6日自由行</h5>
+                <p>线路编号 : <span>04001398744</span></p>
+                <p>报名截止日期 : <span>2016-01-11</span></p>
+            </div>
+
+        </div>
+
+        <div class="order-3">
+            <ul>
+                <li class="order-3-span">联系人信息<a class="order-3-1" href="#"><span>修改</span><i class="ion-compose" ></i></a></li>
+                <li>联系人&nbsp;&nbsp;&nbsp;&nbsp;<span>纪纲</span></li>
+                <li>手机号&nbsp;&nbsp;&nbsp;&nbsp;<span>13789289818</span></li>
+
+            </ul>
+        </div>
+
+        <div class="order-4">
+            <div class="order-4-1">
+                <i class="ion-ios-information-outline"></i>
+                <span>温馨提示</span>
+            </div>
+            <p>
+                提交订单后，我们将尽快与您联系，并与您确认预定结果，如果有任何请致电中国国旅全过旅游热销:293890213或49978099
+            </p>
+        </div>
+
+        <div class="order-5" ng-click="ordershow()">
+            <span>点击填写完整订单</span>
+            <i class="ion-chevron-down orderchangi"></i>
+        </div>
+
+        <div class="order-6" ng-show='order.show'>
+            <div class="order-6-1">
+                <a href="#tab/orderA">
+                    <i class="ion-android-contact" id="order-6-1-1"></i>
+                    <span>编辑/添加参团人信息</span>
+                    <i class="ion-compose" id="order-6-1-2"></i>
+                </a>
+            </div>
+            <div class="order-6-2">
+                <ul>
+                    <li>
+                        <span class="order-6-2-1">梁朝伟（成人）</span>
+                        <span class="order-6-2-2">护照:</span>
+                        <span class="order-6-2-3">12378974</span>
+                    </li>
+
+                    <li>
+                        <span class="order-6-2-1">刘德华（儿童）</span>
+                        <span class="order-6-2-2">身份证:</span>
+                        <span class="order-6-2-3">12337829489974</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="order-7" ng-show='order.show'>
+            <div class="order-7-1">
+                <img src="img/order-5.png">
+                <span class="order-7-1span">报销凭证</span>
+
+                <i class="ion-android-radio-button-off" id="order-7-1-i"></i>
+                <span ng-click="orderfapiao()" class="order-7-1-span">是否需要开发票</span>
+
+            </div>
+
+            <div class="order-7-2">
+                <div ng-show='show_ord.show'>
+                    <div class="order-7-2-2">
+                        <p>
+                            <span>发票金额</span><span class="order-7-2-2-1">￥16880</span>
+                        </p>
+                        <p>
+                            <span>发票抬头</span>
+                            <input class="order-7-2-2-2"id="order-7-2-2-2-1" type="radio" checked name="orde"/><label for="order-7-2-2-2-1">
+                            <span>个人</span>
+                        </label>
+
+                            <input class="order-7-2-2-2"id="order-7-2-2-2-2" type="radio" name="orde"/><label for="order-7-2-2-2-2">
+                            <span>单位</span>
+                        </label>
+
+                        </p>
+
+                    </div>
+                    <div class="order-7-2textarea">
+                        <textarea name="MSG" cols=50 rows=3 placeholder=" 请输入发票抬头"></textarea>
+                    </div>
+                    <div class="order-7-2-3">
+                        <span class="order-7-2-3span">发票地址邮寄信息</span>
+
+                        <a href="#"><img src="img/order-4.png"></a>
+                        <span class="order-7-2-3span1">添加邮寄地址</span>
+                    </div>
+                    <div class="dizhidiv">
+                        <div class="dizhidiv-div">
+                            <p class="dizhi">
+                                <input name="Fruit2" type="radio"id="Fruit21" checked/>
+                                <label for="Fruit21">
+                                <span class="chengshi">Rose</span>
+                                <span class="chengshi">天津</span></br>
+                                <p class="chengshi1">北京市海淀区XXX路XXX号</p>
+                                </label>
+                                <div class="orderxiu">
+                                    <span class="shangai1">修改</span>
+                                </div>
+                           </p>
+                        </div>
+                        <div class="dizhidiv-div">
+                            <p class="dizhi">
+                                <input name="Fruit2"id="Fruit22" type="radio"/>
+                                <label for="Fruit22">
+                                <span class="chengshi">Rose</span>
+                                <span class="chengshi">天津</span></br>
+                                <p class="chengshi1">北京市海淀区XXX路XXX号</p>
+                                </label>
+                                <div class="orderxiu">
+                                    <span class="shangai1">修改</span>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="order-8" ng-show='order.show'>
+            <div class="order-8-1">
+                <img src="img/order-2.png"/>&nbsp;&nbsp;
+                <span>订单备注</span>
+            </div>
+
+            <div class="order-8-2">
+                <textarea name="MSG" cols=50 rows=3 placeholder="请填写您要的备注信息"></textarea>
+            </div>
+        </div>
+
+        <div class="order-9" ng-show='order.show'>
+            <div class="order-9-1">
+                <img src="img/order-1.png"/>
+                <span> 使用推荐码</span>
+            </div>
+
+            <div class="order-9-1" ng-show="order9.show">
+                <div class="order-9-1div1">
+                    <input type="text" class="orinput" ng-model="recocode" placeholder=" 中国国际王府井门市   张三">
+                </div>
+                <button class="order-9-1div" ng-click="order9input()">
+                    确定
+                </button>
+            </div>
+
+            <div class="order-9-1" ng-show="order9but.show">
+                <div class="order-9-1div1">
+                    <p>{{recocode}}<button class="ion-compose" ng-click="order9buto()"></button></p>
+                </div>
+            </div>
+        </div>
+        <script id="orderPrice.html" type="text/ng-template">
+            <ion-modal-view  class="modal1 slide-in-up ng-enter active ng-enter-active">
+                <ion-content style="height: 100%">
+                    <div class="jiesuan">
+                        <p class="jiesuan-p-1">结算清单<i class="icon ion-ios-close-outline to-right" ng-click="closeModal()"></i></p>
+                        <div class="jiesuandiv">
+                            <p class="jiesuan-p-2"><span class="jiesuan-p-2-span-1">基本团费</span><span class="jiesuan-p-2-span-2">￥16880</span></p>
+                            <p class="jiesuan-p-3"><span class="jiesuan-p-2-span-1-1">成人</span><span class="jiesuan-p-2-span-2-1">￥4880/人x2</span></p>
+                            <p class="jiesuan-p-3"><span class="jiesuan-p-2-span-1-1">儿童</span><span class="jiesuan-p-2-span-2-1">￥4880/人x2</span></p>
+                        </div>
+                        <div class="jiesuandiv">
+                            <p class="jiesuan-p-2"><span class="jiesuan-p-2-span-1">基本团费</span><span class="jiesuan-p-2-span-2">￥16880</span></p>
+                            <p class="jiesuan-p-3"><span class="jiesuan-p-2-span-1-1">成人</span><span class="jiesuan-p-2-span-2-1">￥4880/人x2</span></p>
+                            <p class="jiesuan-p-3"><span class="jiesuan-p-2-span-1-1">儿童</span><span class="jiesuan-p-2-span-2-1">￥4880/人x2</span></p>
+                        </div>
+                    </div>
+                </ion-content>
+            </ion-modal-view>
+        </script>
+
+    </ion-content>
+
+
+    <div class="bar bar-footer bar-dark">
+        <div id="youhuidi"class="button button-icon "  ng-controller="touristNumController" ng-click="orderPrice()">
+           <span class="dizi">
+                订单总价 :<span>￥16680</span>
+                <i class="ion-ios-arrow-up"></i>
+            </span>
+        </div>
+        <div id="youhuidi1">
+                <a href="#tab/ordersuc" class="jiagequjain">快速预订 </a>
+        </div>
+    </div>
+</ion-view>
+
+

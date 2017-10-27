@@ -1,0 +1,136 @@
+<ion-view view-title="新西兰" hide-tabs>
+    <div class="bar bar-header">
+        <a href="#tab/home" class="button button-icon icon ion-ios-arrow-left homeABC"></a>
+        <h1 class="title">旅游签证</h1>
+        <a href="#" class="button button-icon icon ion-ios-search-strong homeABC"></a>
+    </div>
+
+    <ion-content class="has-header homeqian" delegate-handle="head">
+        <div class="homeC-1">
+            <div class="homeC-1-a">
+                <img class="homeC-1-a-img1" src="img/homec-0.jpg">
+                <h5>新西兰签证</h5>
+                <img class="homeC-1-a-img2" src="img/homec-4.png">
+                <img class="homeC-1-a-img3" src="img/homec-3.png">
+            </div>
+            <div class="homeC-1-b">
+                <p>在基地负责人陪同下，习近平和夫人彭丽媛察看了基地救助的大象、狮子、穿山甲、长颈鹿、角马等野生动物，并给大象、长颈鹿递喂水果、树叶</p>
+            </div>
+        </div>
+
+        <div class="list" class="homeC-list">
+            <a class="item" href="#tab/homeCd">
+                <ul class="homeC-ul">
+                    <li class="homeC-li-1"><h3>个人旅游签证 北京领区</h3></li>
+                    <li class="homeC-li-2"><img src="img/homec-1.png"><span>提前10个工作日预定</span></li>
+                    <li class="homeC-li-3"><img src="img/homec-2.png"><span>有效期:</span><span>根据行程</span></li>
+                    <li class="homeC-li-4"><span>不单独受理</span></li>
+                    <div class="homeC-div-5">
+                        <span>材料受理地:</span><span>北京</span>
+                    </div>
+                    <div class="homeC-div-6"></div>
+                </ul>
+            </a>
+            <a class="item">
+                <ul class="homeC-ul">
+                    <li class="homeC-li-1"><h3>个人旅游签证 北京领区</h3></li>
+                    <li class="homeC-li-2"><img src="img/homec-1.png"><span>提前10个工作日预定</span></li>
+                    <li class="homeC-li-3"><img src="img/homec-2.png"><span>有效期:</span><span>根据行程</span></li>
+                    <li class="homeC-li-4"><span>￥15688起</span></li>
+                    <div class="homeC-div-5">
+                        <span>材料受理地:</span><span>北京</span>
+                    </div>
+                    <div class="homeC-div-6"></div>
+                </ul>
+            </a>
+
+            <a class="item">
+                <ul class="homeC-ul">
+                    <li class="homeC-li-1"><h3>个人旅游签证 北京领区</h3></li>
+                    <li class="homeC-li-2"><img src="img/homec-1.png"><span>提前10个工作日预定</span></li>
+                    <li class="homeC-li-3"><img src="img/homec-2.png"><span>有效期:</span><span>根据行程</span></li>
+                    <li class="homeC-li-4"><span>￥15688起</span></li>
+                    <div class="homeC-div-5">
+                        <span>材料受理地:</span><span>北京</span>
+                    </div>
+                    <div class="homeC-div-6"></div>
+                </ul>
+            </a>
+
+        </div>
+        <script id="area.html" type="text/ng-template">
+            <ion-modal-view class="modal1 slide-in-up ng-enter active ng-enter-active">
+                <ion-header-bar class="bar-positive">
+                    <a class="button" ng-click="closeModal()">取消</a>
+                    <h1 class="title">清空筛选</h1>
+                    <a class="button" ng-click="removeModal()">确定</a>
+                </ion-header-bar>
+                <ion-content class="heomecontent">
+                    <div class="visa-content homeCtanchu">
+                        <h5>签证领区</h5>
+                        <div class="homeCtandiv">
+                            <a class="button button-outline button-calm">不限</a>
+                            <a class="button button-outline">北京</a>
+                            <a class="button button-outline">上海</a>
+                            <a class="button button-outline">乌鲁木齐</a>
+                            <a class="button button-outline">南京</a>
+                            <a class="button button-outline">长沙</a>
+                            <a class="button button-outline">哈尔滨</a>
+                        </div>
+                    </div>
+                </ion-content>
+            </ion-modal-view>
+        </script>
+        <script id="visa.html" type="text/ng-template">
+            <ion-modal-view class="modal1 slide-in-up ng-enter active ng-enter-active">
+                <ion-header-bar class="bar-positive">
+                    <a class="button" ng-click="closeModal()">取消</a>
+                    <h1 class="title">清空筛选</h1>
+                    <a class="button" ng-click="removeModal()">确定</a>
+                </ion-header-bar>
+                <ion-content>
+                    <div class="row qianzheng">
+                        <div class="col col-25">
+                            <ion-scroll direction="y" scrollbar-y="false">
+                                <ul class="list">
+                                    <li class="item clicked homelizuo" type="card" >签证类型</li>
+                                </ul>
+                            </ion-scroll>
+                        </div>
+                        <div class="col col-75">
+                            <ion-scroll direction="y" class="homeliyou">
+                                <div class="list">
+                                    <label class="item item-radio" ng-repeat="i in items" ng-click="doSelect(this)">
+                                        <input type="radio" name="group" value="">
+                                        <div class="radio-content">
+                                            <div class="item-content">
+                                                {{i}}
+                                            </div>
+                                            <i class="radio-icon ion-android-radio-button-on"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                            </ion-scroll>
+
+                        </div>
+                    </div>
+                </ion-content>
+
+            </ion-modal-view>
+        </script>
+    </ion-content>
+
+    <div class="bar bar-footer bar-dark homeAdi">
+        <div class="di" ng-controller="homeCController" ng-click="receiveArea()">
+            <i  class="ion-stats-bars"></i>
+            领区
+        </div>
+        <div class="di"ng-controller="visaController" ng-click="visaType()">
+            <i class="ion-android-share-alt" ></i>
+            签证类型
+        </div>
+    </div>
+</ion-view>
+
+
+
